@@ -175,7 +175,15 @@ var characterName = "John";
 
 // alert(characterName);
 
-let playName = "Peter";
-let playName = "john";
+// let playName = "Peter";
+// let playName = "john";
 
-alert(playName);
+// alert(playName);
+
+
+function sayHi() {
+   var phrase;
+   alert(phrase);
+   phrase = "Hello";
+}
+sayHi();
