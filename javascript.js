@@ -211,3 +211,6 @@ function sayHi() {
 //     alert("Unary plus starts the expression")
 // }();
 
+// (function sayHello() {
+//     alert("Say Hello");
+// })();
