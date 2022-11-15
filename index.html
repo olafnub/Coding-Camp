@@ -10,11 +10,12 @@
 </header>
 
 <body>
-    <button>Start machine</button>
+    <button id="machineLearning">Start machine</button>
     <p>This machine is stopped</p>
 
+    <button id="secondButton">Press me</button>
     <script>
-        const lyeStrong = document.querySelector("button");
+    const lyeStrong = document.getElementById("machineLearning");
     const ttxt = document.querySelector("p");
 
     lyeStrong.addEventListener("click", bbtnCreate);
@@ -27,8 +28,15 @@
         lyeStrong.textContent = "Start machine";
         ttxt.textContent = "The machine is stopped";
     }
-
 }
+    const molly = document.getElementById("secondButton");
+
+    function greetMe() {
+    const name = prompt("What is your name?");
+    alert(`Hello ${name}, nice to see you!`);
+    }
+
+    molly.addEventListener("click", greetMe);
     </script>
 </body>
 

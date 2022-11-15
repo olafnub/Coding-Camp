@@ -63,7 +63,7 @@ let NUMBER_FIFTY = 50;
 // console.log(NUMBER_FIFTY!==50*3);
 let NUMBER_FIVE = 5;
 
-let answerKey = NUMBER_FIFTY = NUMBER_FIVE * 4;
+// let answerKey = NUMBER_FIFTY = NUMBER_FIVE * 4;
 // console.log(answerKey);
 
 let numberOne, numberTwo, numberThree;
@@ -236,4 +236,22 @@ let isGreater = 4>1;
 let valueNull = null;
 let unAssigned;
 
-console.log(unAssigned);
+// document.add("bob").innerHTML=valueNull;
+
+// let alope = ;
+
+// alert(typeof alope);
+
+const bigMouth = 'I\'ve got no right to take my place...';
+// console.log(bigMouth);
+
+// Concatentation, back ticks `${const}`
+const birthName = "Chris";
+const greeting = `Hello, ${birthName}`;
+const greetingTwo = "Hello! " + birthName;
+const greetingTogether = `${greeting} ${greetingTwo}`;
+const numberTesting = NUMBER_FIFTY;
+const numberTestingT = NUMBER_FOUR;
+
+console.log(`${numberTesting / numberTestingT}`);
+
