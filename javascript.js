@@ -186,4 +186,28 @@ function sayHi() {
    alert(phrase);
    phrase = "Hello";
 }
-sayHi();
+// sayHi();
+
+// (function() {
+    
+//     var importantMessage = "Hello World";
+
+//     alert(importantMessage);
+// })();
+
+// (function() {
+// alert("Parathesis around the function");
+// })();
+
+// (function() {
+//     alert("Paranthesis around the whole thing");
+// }());
+
+// !function() {
+//     alert("Bitwise NOT operator, starts the function");
+// }();
+
+// +function() {
+//     alert("Unary plus starts the expression")
+// }();
+
