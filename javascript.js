@@ -170,4 +170,12 @@ function sayHi() {
 // sayHi();
 // alert(phrase); doesn't work because function (sayHi() wasn't called for)
 
+var characterName = "Peter";
+var characterName = "John";
 
+// alert(characterName);
+
+let playName = "Peter";
+let playName = "john";
+
+alert(playName);
