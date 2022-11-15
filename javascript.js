@@ -214,3 +214,26 @@ function sayHi() {
 // (function sayHello() {
 //     alert("Say Hello");
 // })();
+
+// alert(+true);
+
+let noError = 12;
+noError = 12.25;
+
+// alert(NaN ** 0);
+let tumBug = "Jumbug";
+
+// alert(`Name is, ${tumBug}`);
+
+let nameAge = true;
+let ageName = false;
+
+nameAge = "anthony";
+ageName = "Joe";
+
+let isGreater = 4>1;
+
+let valueNull = null;
+let unAssigned;
+
+console.log(unAssigned);
