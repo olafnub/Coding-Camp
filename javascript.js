@@ -291,4 +291,14 @@ window.onload = function() {
    let spaceTrim = lotsOfSpace.trim();
    document.getElementById("spacing").innerHTML = 
    "length= " + lotsOfSpace.length + "<br> trimmed length = " + spaceTrim.length;
+   
+   let grape = "grape";
+   let grapeFruit = grape.padEnd(10, "Fruit");
+   document.getElementById("fruit").innerHTML = grapeFruit;
+
+   let waterCup = "water cup";
+   document.getElementById("cup").innerHTML = waterCup +
+   "--" + waterCup.charAt(0) + "'s unicode is " + 
+   waterCup.charCodeAt(0) + "<br>" + waterCup[1] + 
+   "'s uncode is " + waterCup.charCodeAt(1);
 }
