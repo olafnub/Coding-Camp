@@ -274,4 +274,9 @@ window.onload = function() {
    let companyIntroduction = "Hey, welcome to Microsoft!";
    let companyIntroductionReplace = companyIntroduction.replace("Microsoft", "Google");
    document.getElementById("companyName").innerHTML = companyIntroductionReplace;
+
+   let catVsDog = "Cats are amazing, Everyone love Cats";
+   catVsDog = catVsDog.replaceAll(/CATS/ig, "Dogs");
+   document.getElementById("catAndDog").innerHTML = catVsDog;
+
 }
