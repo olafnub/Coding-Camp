@@ -286,4 +286,9 @@ window.onload = function() {
    function myIntro() {
    introPara.textContent = introPara.textContent.toUpperCase();
    }
+
+   let lotsOfSpace = "     HELLO WORLD!      ";
+   let spaceTrim = lotsOfSpace.trim();
+   document.getElementById("spacing").innerHTML = 
+   "length= " + lotsOfSpace.length + "<br> trimmed length = " + spaceTrim.length;
 }
