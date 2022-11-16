@@ -279,4 +279,11 @@ window.onload = function() {
    catVsDog = catVsDog.replaceAll(/CATS/ig, "Dogs");
    document.getElementById("catAndDog").innerHTML = catVsDog;
 
+   let introButton = document.getElementById("intro");
+   let introPara = document.getElementById("intro-p");
+   
+   introButton.addEventListener("click", myIntro);
+   function myIntro() {
+   introPara.textContent = introPara.textContent.toUpperCase();
+   }
 }
