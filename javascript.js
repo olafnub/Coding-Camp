@@ -253,5 +253,13 @@ const greetingTogether = `${greeting} ${greetingTwo}`;
 const numberTesting = NUMBER_FIFTY;
 const numberTestingT = NUMBER_FOUR;
 
-console.log(`${numberTesting / numberTestingT}`);
+const songName = "Coast";
+const myRating = 9;
+const maxRating = 10;
+const output = `The song ${songName} is amazing and I give it a rating of
+${myRating}/${maxRating}, a score of ${myRating/maxRating * 100}%`;
+
+console.log(output);
+
+
 
