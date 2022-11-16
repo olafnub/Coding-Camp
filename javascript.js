@@ -259,7 +259,19 @@ const maxRating = 10;
 const output = `The song ${songName} is amazing and I give it a rating of
 ${myRating}/${maxRating}, a score of ${myRating/maxRating * 100}%`;
 
-console.log(output);
+// console.log(output);
 
+// window.onload = function() {
+// let nas = "lilnasX";
+// document.getElementById("textCount").innerHTML = nas.length;
+// }
 
+window.onload = function() {
+   let doorDash = "Papa John's, JJ's Poke, Frank & Andreas";
+   let doorDashSplit = doorDash.substr(13, 9);
+   document.getElementById("foodWord").innerHTML = doorDashSplit;
 
+   let companyIntroduction = "Hey, welcome to Microsoft!";
+   let companyIntroductionReplace = companyIntroduction.replace("Microsoft", "Google");
+   document.getElementById("companyName").innerHTML = companyIntroductionReplace;
+}
