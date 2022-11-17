@@ -301,4 +301,21 @@ window.onload = function() {
    "--" + waterCup.charAt(0) + "'s unicode is " + 
    waterCup.charCodeAt(0) + "<br>" + waterCup[1] + 
    "'s uncode is " + waterCup.charCodeAt(1);
+
+   let journalTitles = "Diary, {user}'s Diary, Public Diary, My Book";
+   let arrayList = journalTitles.split(",");
+   document.getElementById("journal").innerHTML = arrayList[1];
+
+   let myJournal = arrayList[0];
+   let myArr = myJournal.split("");
+//    alert(myJournal);
+   let journalSpace = "";
+   for (let i=0; i < myArr.length; i++) {
+//    alert(myArr[1]);
+   journalSpace+=myArr[i] + "&nbsp;&nbsp;";
+
+   }
+   document.getElementById("journal-title").innerHTML = journalSpace;
+
+   
 }
