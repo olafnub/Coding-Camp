@@ -339,4 +339,18 @@ window.onload = function() {
    let doTheyMatch = waterCup.toLowerCase() === myJournal.toLowerCase();
    console.log(doTheyMatch);
    }
+
+   let longString = "You don't need me As much as I need you \
+   As much as I need you Take it or leave it \
+   'Cause you know that's the truth 'Cause you \
+   know that's the truth";
+   document.getElementById("1036Lyric").innerHTML = longString +
+   "<br> Checking if the song has the word \"love\" ... " + 
+   longString.includes("love") + "<br> Though this \
+   song does include \"truth\" - starting from 0 \
+   it is " + longString.toLowerCase().indexOf("truth") + 
+   "<br> The last \"truth\" is " + longString.toLowerCase().lastIndexOf("truth") +
+   "<br> The length of the text is " + longString.length;
+
+
 }
