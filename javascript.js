@@ -353,4 +353,13 @@ window.onload = function() {
    "<br> The length of the text is " + longString.length;
 
 
+   let compareChar = '2'.localeCompare('1');
+   // console.log(compareChar);
+
+   let compareWords = "sing".localeCompare("bring");
+   // console.log(compareWords);
+
+   let arrayFlowers = ["dandelions", "daisys", "floral", "blue flowers"];
+   let arrangedFlowers = arrayFlowers.sort((a, b) => a.localeCompare(b, "fr", { ignorePunctuation : true}));
+//    console.log(arrangedFlowers);
 }
