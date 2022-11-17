@@ -362,4 +362,23 @@ window.onload = function() {
    let arrayFlowers = ["dandelions", "daisys", "floral", "blue flowers"];
    let arrangedFlowers = arrayFlowers.sort((a, b) => a.localeCompare(b, "fr", { ignorePunctuation : true}));
 //    console.log(arrangedFlowers);
+
+   let wordRepeat = /[A-Z]/ig;
+//    console.log(longString.match(wordRepeat));
+
+   let whatWord = /(?<song>Take|around) it or leave/;
+   let thisWord = longString.match(whatWord);
+   document.getElementById("findWord").innerHTML = thisWord;
+
+//    I WILL GET THROUGH https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+// start over
+
+   let myNameIs = "Speed, Andy, Kolly";
+//    console.log(String.fromCodePoint(0xd834, 0xdf06, 0x61, 0xd834, 0xdf07));
+
+
+   console.log(String.raw`Hi\n${2+3}!`);
+   console.log(`Hi\n${2+3}!`);
+
+
 }
