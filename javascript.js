@@ -315,7 +315,28 @@ window.onload = function() {
    journalSpace+=myArr[i] + "&nbsp;&nbsp;";
 
    }
-   document.getElementById("journal-title").innerHTML = journalSpace;
-
+   document.getElementById("journal-title").innerHTML = journalSpace; 
    
+   let bagAmount = 2;
+   let bagString = new String(bagAmount);
+//    console.log(typeof bagString);
+
+   let a = "a";
+   let b = "b";
+
+   function greaterOrLess() {
+    if (a<b) {
+    console.log(`${a} is less than ${b}`);
+   } else if (a>b) {
+    console.log(`${a} is greater than ${b}`);
+   } else {
+    console.log(`${a} is equal to ${b}`);
+   }
+
+
+}
+   function areEqualCaseInsensitive() {
+   let doTheyMatch = waterCup.toLowerCase() === myJournal.toLowerCase();
+   console.log(doTheyMatch);
+   }
 }
