@@ -379,8 +379,16 @@ window.onload = function() {
 
    // console.log(String.raw`Hi\n${2+3}!`);
    // console.log(`Hi\n${2+3}!`);
-   console.log(String.raw`my name is \${myNameIs}!\${companyIntroduction}`);
-   console.log(`Hi, my name is \${myNameIs}`)
+   // console.log(String.raw`my name is \${myNameIs}!\${companyIntroduction}`);
+   // console.log(`Hi, my name is \${myNameIs}`)
+
+   let wordSplit = String.raw({raw: 'test'}, "<br>");
+   // console.log(wordSplit);
+
+   let html = (strings, ...values) => String.raw({raw: strings}, ...values);
+   // let html = String.raw;
+   let doc = html`<canvas>\n</canvas>`;
+   // console.log(doc);
 
 
 }
