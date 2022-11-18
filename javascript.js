@@ -411,5 +411,16 @@ window.onload = function() {
 
    let index = 5;
    let useIndex = myNameIs.at(index);
-   console.log(`Starting from 0 with an index of ${index} we find ${useIndex}`);
+   // console.log(`Starting from 0 with an index of ${index} we find ${useIndex}`);
+
+   // return last character of a string
+
+   let yellowSign = "yellow-sign";
+   function returnLast(bob) {
+      return bob.at(-1);
+   }
+   console.log(returnLast(yellowSign));
+   // alert(myNameIs);
+
+
 }
