@@ -390,5 +390,28 @@ window.onload = function() {
    let doc = html`<canvas>\n</canvas>`;
    // console.log(doc);
 
+   let myNameIsLength = myNameIs.length;
+   // console.log(myNameIsLength);
+
+   let buildName ="";
+   for (i=0; i<myNameIsLength; i++) {
+      buildName+=myNameIs.charAt(i);
+   }
+   // console.log(buildName);
+   // length does not need ()
+
+   function getCharacterLength(str) {
+      return [...str].length;
+   }
+   // console.log(getCharacterLength("A\uD87E\uDC04Z"));
+   // console.log(charCodeAt());
+
+   let emojiName = "😄";
+   // console.log(emojiName.length);
+
+   let index = 5;
+   let useIndex = myNameIs.at(index);
+   console.log(`Starting from 0 with an index of ${index} we find ${useIndex}`);
+   
 
 }
