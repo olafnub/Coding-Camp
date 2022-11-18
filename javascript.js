@@ -416,11 +416,38 @@ window.onload = function() {
    // return last character of a string
 
    let yellowSign = "yellow-sign";
+   let NUMBER_TEN = "10";
    function returnLast(bob) {
       return bob.at(-1);
    }
-   console.log(returnLast(yellowSign));
+   function returnFirst(deez) {
+      return deez.charAt(0);
+   }
+   // console.log(returnFirst(yellowSign));
+   // console.log(returnFirst(NUMBER_TEN));
    // alert(myNameIs);
 
+   let strName = "A\uD87E\uDC04Z";
+   // console.log(strName);
+   // for(i=0; i<strName.length; i++) {
+   //    let chr;
+   //    [chr, i] = getWholeCharAndI(strName, i);
 
+
+   //    console.log(chr);
+   // }
+
+   // function getWholeCharAndI(str, i) {
+   //    let code = str.charCodeAt(i);
+
+   // }
+
+   let strNameSpell;
+   for (i=0; i < strName.length; i++) {
+      strNameSpell += strName.charAt(i);
+   }
+   let strNameOutput = `strName = ${strName}\nstrNameSpell = ${strNameSpell}\n`
+   + strName.charAt(0) + strName.charAt(1) + strName.charAt(2) + strName.charAt(3) + strName.charAt(4);
+   // console.log(strNameOutput);
+   
 }
