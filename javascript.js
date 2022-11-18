@@ -377,8 +377,10 @@ window.onload = function() {
 //    console.log(String.fromCodePoint(0xd834, 0xdf06, 0x61, 0xd834, 0xdf07));
 
 
-   console.log(String.raw`Hi\n${2+3}!`);
-   console.log(`Hi\n${2+3}!`);
+   // console.log(String.raw`Hi\n${2+3}!`);
+   // console.log(`Hi\n${2+3}!`);
+   console.log(String.raw`my name is \${myNameIs}!\${companyIntroduction}`);
+   console.log(`Hi, my name is \${myNameIs}`)
 
 
 }
