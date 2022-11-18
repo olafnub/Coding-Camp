@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.outside-card {
+    display: flex;
+    background-color:bisque;
+    border: 2px solid black;
+    padding: 3px;
+    text-align: center;
+    width: 250px;
+    height: auto;
+}
+.number {
+    color:darkorchid;
+}
+.inside-card {
+    padding: 0px;
+    margin: 0px;
+}
+#last-para, #run-time {
+    /* border: 1px solid green; */
+    padding: 0;
+    margin: 0;
+}
