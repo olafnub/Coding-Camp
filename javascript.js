@@ -449,6 +449,21 @@ window.onload = function() {
    let strNameOutput = `strName = ${strName}\nstrNameSpell = ${strNameSpell}\n`
    + strName.charAt(0) + strName.charAt(1) + strName.charAt(2) + strName.charAt(3) + strName.charAt(4);
    // console.log(strNameOutput);
+
+   let STRING_OBJECT = new String("Hello");
+   // console.log(typeof STRING_OBJECT);
+   // alert(STRING_OBJECT);
+   
+   let numberWord = String.fromCodePoint(9731, 9733, "9842", 0x2F804);
+   let UNICODE_H = String.fromCodePoint(0x48);
+   let AZ = String.fromCodePoint(65, 90);
+   console.log(String.fromCodePoint(0x1F303));
+   // let stringObject = String.fromCodePoint(STRING_OBJECT);
+   // console.log(object.fromCodePoint(65, 65));
+   // let greetings = "HELLO"
+   // console.log(UNICODE_H.toLowerCase());
+   // console.log(numberWord);
+
    
    
 }
