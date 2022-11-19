@@ -450,4 +450,5 @@ window.onload = function() {
    + strName.charAt(0) + strName.charAt(1) + strName.charAt(2) + strName.charAt(3) + strName.charAt(4);
    // console.log(strNameOutput);
    
+   
 }
