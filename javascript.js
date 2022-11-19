@@ -457,13 +457,29 @@ window.onload = function() {
    let numberWord = String.fromCodePoint(9731, 9733, "9842", 0x2F804);
    let UNICODE_H = String.fromCodePoint(0x48);
    let AZ = String.fromCodePoint(65, 90);
-   console.log(String.fromCodePoint(0x1F303));
+   // console.log(String.fromCodePoint(0x1F303));
    // let stringObject = String.fromCodePoint(STRING_OBJECT);
    // console.log(object.fromCodePoint(65, 65));
    // let greetings = "HELLO"
    // console.log(UNICODE_H.toLowerCase());
    // console.log(numberWord);
 
-   
-   
+   let printFile =  "C:\Development\profile\aboutme.html";
+   let printFileRaw = String.raw`C:\Development\profile\aboutme.html`;
+   // let printFileWord = `C:\Development\profile\aboutme.html`;
+   // console.log(printFileRaw);
+   // console.log(String.raw(strings, ...substitutions));
+   // console.log(String.raw(`templateString`));
+   // console.log(printFileWord);
+   let rawArray = { raw: ['food', 'tell', 'foo']};
+   // let getArray = { String: ['food', 'tell', 'show']};
+   // console.log(rawArray);
+   // console.log(getArray[0]);
+   // console.log(`4+5=${4+5}`);
+   // console.log(String.raw`4+5=${4+5}`);
+   // console.log(`\u2605`);
+   // console.log(String.raw`\u2605`);
+   // console.log(`Monday\nTuesday\nWednesday\nThursady`);
+   // console.log(String.raw`Monday\nTuesday\nWednesday\nThursday`);
+   console.log(String.raw`${strName}`);
 }
