@@ -481,5 +481,40 @@ window.onload = function() {
    // console.log(String.raw`\u2605`);
    // console.log(`Monday\nTuesday\nWednesday\nThursady`);
    // console.log(String.raw`Monday\nTuesday\nWednesday\nThursday`);
-   console.log(String.raw`${strName}`);
+   // console.log(String.raw`${strName}`);
+
+   function singleLineString(strings, ...values) {
+      // Interweave the strings with the
+      // substitution vars first.
+      let output = '';
+      for (let i = 0; i < values.length; i++) {
+        output += strings[i] + values[i];
+      }
+      output += strings[values.length];
+    
+      // Split on newlines.
+      let lines = output.split(/(?:\r\n|\n|\r)/);
+    
+      // Rip out the leading whitespace.
+      return lines.map((line) => {
+        return line.replace(/^\s+/gm, '');
+      }).join(' ').trim();
+    }
+   function getLength(str) {
+      return str.length;
+   }
+   function getCharaLength(str) {
+      return [...str].length;
+   }
+   let functionCode = "A\uD87E\uDC04Z"
+
+   let getCharaReturn = getCharaLength(functionCode);
+   let getLengthReturn = getLength(functionCode);
+   
+   // console.log(singleLineString`${getCharaReturn}`);
+    console.log("getCharaLength = " + singleLineString`${getCharaReturn}` 
+    + "\ngetLength = " + singleLineString`${getLengthReturn}`);
+   // alert(getLengthReturn);
+
+
 }
