@@ -530,7 +530,34 @@ window.onload = function() {
    }
 
    let myName = "Shady";
-   console.log(`The last letter in ${myName} is ` + getLastC(myName));
+   // console.log(`The last letter in ${myName} is ` + getLastC(myName));
 
+   let introductionSpeech = "Have you ever gone to the mall and bought a shower head before?";
+
+   function findWord(str, searchWord) {
+      return str.includes(searchWord) ? 'is' : 'is not';
+   }
+   let wordInput = "you";
+   // console.log(findWord(introductionSpeech, wordInput));
+
+   let dontWantItLyrics = `If I say so, know they gon' ride <br>
+   I know G's, and you know they ain't nice <br>
+   If I pop up, I'ma want it, but I get by <br>
+   Tell the devil I can't have him inside (woah) <br>
+   Tell the reaper he don't want it, he don't want it <br>
+   Oh, I know everything's gonna be alright <br>
+   Tell the reaper he don't want it, he don't want it <br>
+   Oh, I know everything's gonna be alright`;
+
+   document.getElementById("lilNas").innerHTML = dontWantItLyrics;
+
+   let userFindLyric = prompt("Search lyric in chorus of 'Don't Want It' By Lil NasX");
+   alert("Check below to see if your word is there");
+   let returnLyricStatement = findWord(dontWantItLyrics, userFindLyric);
+
+   let returnLyricP = `The word you're searching for "${userFindLyric}" ${returnLyricStatement} in the chorus`;
+   document.getElementById("searchedWord").innerHTML = returnLyricP;
+
+   
 
 }
