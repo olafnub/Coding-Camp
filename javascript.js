@@ -519,11 +519,18 @@ window.onload = function() {
    // alert(getLengthReturn);
    
    // console.log(singleLineString`${getCharaReturn}`);
-    console.log("print " + functionCode
-    + "\ngetCharaLength = " + singleLineString`${getCharaReturn}` 
-    + "\ngetLength = " + singleLineString`${getLengthReturn}` 
-    + "\nreturnFunctionCode = " + singleLineString`${returnFunctionCode().length}`);
+   //  console.log("print " + functionCode
+   //  + "\ngetCharaLength = " + singleLineString`${getCharaReturn}` 
+   //  + "\ngetLength = " + singleLineString`${getLengthReturn}` 
+   //  + "\nreturnFunctionCode = " + singleLineString`${returnFunctionCode().length}`);
    // alert(getLengthReturn);
+
+   function getLastC(str) {
+      return str.at(-1);
+   }
+
+   let myName = "Shady";
+   console.log(`The last letter in ${myName} is ` + getLastC(myName));
 
 
 }
