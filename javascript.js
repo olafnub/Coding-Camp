@@ -508,12 +508,21 @@ window.onload = function() {
    }
    let functionCode = "A\uD87E\uDC04Z"
 
+   function returnFunctionCode() {
+      return functionCode;
+   }
+   // alert(getCharaLength(functionCode));
+   
    let getCharaReturn = getCharaLength(functionCode);
    let getLengthReturn = getLength(functionCode);
+
+   // alert(getLengthReturn);
    
    // console.log(singleLineString`${getCharaReturn}`);
-    console.log("getCharaLength = " + singleLineString`${getCharaReturn}` 
-    + "\ngetLength = " + singleLineString`${getLengthReturn}`);
+    console.log("print " + functionCode
+    + "\ngetCharaLength = " + singleLineString`${getCharaReturn}` 
+    + "\ngetLength = " + singleLineString`${getLengthReturn}` 
+    + "\nreturnFunctionCode = " + singleLineString`${returnFunctionCode().length}`);
    // alert(getLengthReturn);
 
 
