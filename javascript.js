@@ -602,8 +602,44 @@ window.onload = function() {
       let documentWord = "bottle";
       return oceanParagraph.lastIndexOf(documentWord);
    }
-   console.log(returnLastIndexOf());
+   // console.log(returnLastIndexOf());
 
-   
+   // function returnLocale() {
+   //    let word1 = "10:35";
+   //    let word2 = "10:35";
+
+   //    return word1.localeCompare(word2);
+   // }
+   // console.log(returnLocale());
+
+   // var userWordOne = "SSSSYS";
+   // var userWordTwo = "SSSSZ";
+
+   // function whichWordComesAfter() {
+   //    return biggerWord = userWordOne.localeCompare(userWordTwo);
+   // }
+   // console.log(`Which Word Comes After? ${userWordOne} or ${userWordTwo}
+   // return 1 if ${userWordOne} comes after, return 0 if ${userWordTwo} comes after \n
+   // RETURNING: ` + whichWordComesAfter());
+
+   // const groceryItems = ["tomato", "water", "computer", "google"];
+   // const accentWords = ["réservé", "Cliché", "communiqué", "café", "Adieu", "AN", "an"];
+   // groceryItems.sort((a,b) => a.localeCompare(b));
+   // accentWords.sort((a,b) => a.localeCompare(b, {ignorePunctuation: true}));
+   // console.log(groceryItems);
+   // console.log(accentWords);
 
 }
+let yourWords = [];
+   const arrayWords = (e)=> {
+      e.defaultValue();
+
+      var givenWords = {
+         word: document.getElementById('txt').value
+      }
+      yourWords.push(givenWords);
+
+   }
+   
+
+   // "2">"10" 2<10

@@ -39,6 +39,13 @@
     <h3>Don't Want It - Intro</h3>
     <p id="lilNas"></p>
     <p id="searchedWord"></p>
+    <form>
+    <h3>Welcome to your localeCompare numbering</h3>
+    <p>Type your words! numbers, words, letters, etc</p>
+    ><input type="text" id="txt" placeholder="press enter once done"></input><
+    <button id='bttn'>Finished</button>
+    </form>
+    
     <script>
 
     const lyeStrong = document.getElementById("machineLearning");
@@ -63,6 +70,19 @@
     }
 
     molly.addEventListener("click", greetMe);
+
+// localeCompare Numbering
+   let yourWords = [];
+   const arrayWords = (e)=> {
+      e.defaultValue();
+
+      var givenWords = {
+         word: document.getElementById('txt').value
+      }
+      yourWords.push(givenWords);
+      
+   }
+   alert(JSON.stringify(yourWords));
 
    </script>
 </body>
