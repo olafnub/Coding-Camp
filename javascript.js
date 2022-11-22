@@ -540,6 +540,7 @@ window.onload = function() {
    let wordInput = "you";
    // console.log(findWord(introductionSpeech, wordInput));
 
+   function lilNasLyric() {
    let dontWantItLyrics = `If I say so, know they gon' ride <br>
    I know G's, and you know they ain't nice <br>
    If I pop up, I'ma want it, but I get by <br>
@@ -551,12 +552,49 @@ window.onload = function() {
 
    document.getElementById("lilNas").innerHTML = dontWantItLyrics;
 
+
    let userFindLyric = prompt("Search lyric in chorus of 'Don't Want It' By Lil NasX");
    alert("Check below to see if your word is there");
+   
    let returnLyricStatement = findWord(dontWantItLyrics, userFindLyric);
 
    let returnLyricP = `The word you're searching for "${userFindLyric}" ${returnLyricStatement} in the chorus`;
    document.getElementById("searchedWord").innerHTML = returnLyricP;
+
+   }
+   // lilNasLyric();
+   
+   function endsWithFunction() {
+      let pillowDescription = "The pillow has a white cover"; 
+
+      let checkEndsWith = pillowDescription.endsWith("cover");
+      let checkEndsWithNumber = pillowDescription.endsWith("cove", 27);
+      console.log(checkEndsWith + `\n` + checkEndsWithNumber);
+
+      // endsWith() number starts at 1
+
+   }
+   // endsWithFunction();
+   
+   function returnIndexOf() {
+      const userPhone = 'i-phone-8ee';
+      const findLetter = 'e';
+      let findNonLetter = 'c';
+      let amountOfLetters = 0;
+      let returnFindLetter = userPhone.indexOf(findLetter);
+
+      while (returnFindLetter !== -1) {
+         amountOfLetters++;
+         returnFindLetter = userPhone.indexOf(findLetter, returnFindLetter+1);
+
+      }
+      // return userPhone.indexOf(findLetter) + " " + userPhone.indexOf(findNonLetter);
+      return amountOfLetters;
+      
+      
+   }
+   console.log(returnIndexOf());
+
 
    
 
