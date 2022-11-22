@@ -593,8 +593,16 @@ window.onload = function() {
       
       
    }
-   console.log(returnIndexOf());
+   // console.log(returnIndexOf());
 
+   function returnLastIndexOf() {
+      let oceanParagraph = 'The ocean has a lot of pollution, mainly filled with plastics. \
+      These platics include objects that aren\'t supposed to be in the ocean: bottles, water bottles, \
+      plastic cups, and maybe even gold watches';
+      let documentWord = "bottle";
+      return oceanParagraph.lastIndexOf(documentWord);
+   }
+   console.log(returnLastIndexOf());
 
    
 
