@@ -40,12 +40,14 @@
     <p id="lilNas"></p>
     <p id="searchedWord"></p>
     <form>
-    <h3>Welcome to your localeCompare numbering</h3>
-    <p>Type your words! numbers, words, letters, etc</p>
-    ><input type="text" id="txt" placeholder="press enter once done"></input><
-    <button id='bttn'>Finished</button>
-    <p id='userListWords'></p>
-    </form>
+        <h3>Welcome to your localeCompare numbering</h3>
+        <p>Type your words! numbers, words, letters, etc</p>
+        <input type="text" id="txt" placeholder="press enter once done"></input>
+        </form>
+        <button id='bttnAdd'>Add</button>
+        <button id='bttnFinish'>Finished</button>
+
+        <p id='userListWords'></p>
     
     <script>
 
@@ -73,29 +75,35 @@
     molly.addEventListener("click", greetMe);
 
 // localeCompare Numbering
-   let yourWords = [];
-   let yourWordsSorted = [];
-   const arrayWords = (e)=> {
-      e.preventDefault();
 
-      let givenWords = document.getElementById('txt').value
+
+let arrayList = []; 
+
       
-      yourWords.push(givenWords);
-      document.forms[0].reset();
 
-      let getWords = JSON.strinigfy(yourWords);
-      getWords.sort((a,b) => a.localeCompare(b));
-      yourWordsSorted.push(yourWords);
-      alert(getWords);
+      const addTheArrays = (ev) => {
+        ev.preventDefault();
+
+        let userInput = document.getElementById('txt').value;
+
+        arrayList.push(userInput);
+        document.forms[0].reset();
+        
+        alert(JSON.stringify(arrayList));
+      }
 
 
-      document.getElementById('userListWords').innerHTML = yourWordsSorted;
-    
+      const buttonAdd = document.getElementById('bttnAdd');
+      const buttonFinish = document.getElementById('bttnFinish');
+      function arraysPrint() {
+        document.getElementById('userListWords').innerHTML =
+        JSON.stringify(arrayList);
 
-   }
-   document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('bttn').addEventListener('click', arrayWords)
-   });
+      } 
+
+    buttonAdd.addEventListener('click', addTheArrays);
+    buttonFinish.addEventListener('click', arraysPrint);
+
 
    
    </script>
