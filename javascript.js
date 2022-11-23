@@ -629,17 +629,7 @@ window.onload = function() {
    // console.log(groceryItems);
    // console.log(accentWords);
 
-}
-let yourWords = [];
-   const arrayWords = (e)=> {
-      e.defaultValue();
-
-      var givenWords = {
-         word: document.getElementById('txt').value
-      }
-      yourWords.push(givenWords);
-
-   }
-   
-
    // "2">"10" 2<10
+
+}
+   

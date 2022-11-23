@@ -44,6 +44,7 @@
     <p>Type your words! numbers, words, letters, etc</p>
     ><input type="text" id="txt" placeholder="press enter once done"></input><
     <button id='bttn'>Finished</button>
+    <p id='userListWords'></p>
     </form>
     
     <script>
@@ -73,17 +74,30 @@
 
 // localeCompare Numbering
    let yourWords = [];
+   let yourWordsSorted = [];
    const arrayWords = (e)=> {
-      e.defaultValue();
+      e.preventDefault();
 
-      var givenWords = {
-         word: document.getElementById('txt').value
-      }
-      yourWords.push(givenWords);
+      let givenWords = document.getElementById('txt').value
       
-   }
-   alert(JSON.stringify(yourWords));
+      yourWords.push(givenWords);
+      document.forms[0].reset();
 
+      let getWords = JSON.strinigfy(yourWords);
+      getWords.sort((a,b) => a.localeCompare(b));
+      yourWordsSorted.push(yourWords);
+      alert(getWords);
+
+
+      document.getElementById('userListWords').innerHTML = yourWordsSorted;
+    
+
+   }
+   document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('bttn').addEventListener('click', arrayWords)
+   });
+
+   
    </script>
 </body>
 
