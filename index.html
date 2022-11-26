@@ -46,6 +46,7 @@
         </form>
         <button id='bttnAdd'>Add</button>
         <button id='bttnFinish'>Finished</button>
+        <button id="bttnRemove">Remove Last</button>
 
         <p id='userListWords'></p>
     
@@ -91,7 +92,15 @@ let arrayList = [];
         document.forms[0].reset();
         
         alert(JSON.stringify(arrayList));
+        
       }
+
+      function removeArrays() {
+        arrayList = arrayList.pop();
+        // alert(arrayList.pop());
+        alert("Remove Last Item");
+      }
+      
 
 
       const buttonAdd = document.getElementById('bttnAdd');
@@ -99,11 +108,14 @@ let arrayList = [];
       function arraysPrint() {
         document.getElementById('userListWords').innerHTML =
         JSON.stringify(arrayList);
-
       } 
+      const buttonRemove = document.getElementById('bttnRemove');
+
 
     buttonAdd.addEventListener('click', addTheArrays);
     buttonFinish.addEventListener('click', arraysPrint);
+    buttonRemove.addEventListener('click', removeArrays);
+
 
 // Happy thanksgiving
    
