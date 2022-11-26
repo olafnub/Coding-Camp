@@ -43,10 +43,10 @@
         <h3>Welcome to your localeCompare numbering</h3>
         <p>Type your words! numbers, words, letters, etc</p>
         <input type="text" id="txt" placeholder="press enter once done"></input>
-        </form>
         <button id='bttnAdd'>Add</button>
-        <button id='bttnFinish'>Finished</button>
         <button id="bttnRemove">Remove Last</button>
+    </form>
+    <button id='bttnFinish'>Finished</button>
 
         <p id='userListWords'></p>
     
@@ -98,7 +98,7 @@ let arrayList = [];
       function removeArrays() {
         arrayList = arrayList.pop();
         // alert(arrayList.pop());
-        alert("Remove Last Item");
+        alert("Removed Last Item: " + JSON.stringify(arrayList));
       }
       
 
