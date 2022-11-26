@@ -95,10 +95,12 @@ let arrayList = [];
         
       }
 
-      function removeArrays() {
+      const removeArrays = (ep) => {
+        ep.preventDefault();
         arrayList = arrayList.pop();
         // alert(arrayList.pop());
         alert("Removed Last Item: " + JSON.stringify(arrayList));
+        document.forms[0].reset();
       }
       
 
@@ -106,8 +108,11 @@ let arrayList = [];
       const buttonAdd = document.getElementById('bttnAdd');
       const buttonFinish = document.getElementById('bttnFinish');
       function arraysPrint() {
-        document.getElementById('userListWords').innerHTML =
-        JSON.stringify(arrayList);
+        let stringifyArrayList = JSON.stringify(arrayList);
+        let sortArrayList = arrayList.sort((a, b) => a.localeCompare(b));
+        document.getElementById('userListWords').innerHTML = "Sorted List: "
+        sortArrayList;
+
       } 
       const buttonRemove = document.getElementById('bttnRemove');
 
