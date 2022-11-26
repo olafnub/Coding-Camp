@@ -44,7 +44,7 @@
         <p>Type your words! numbers, words, letters, etc</p>
         <input type="text" id="txt" placeholder="press enter once done"></input>
         <button id='bttnAdd'>Add</button>
-        <button id="bttnRemove">Remove Last</button>
+        <!-- <button id="bttnRemove">Remove Last</button> -->
     </form>
     <button id='bttnFinish'>Finished</button>
 
@@ -95,13 +95,13 @@ let arrayList = [];
         
       }
 
-      const removeArrays = (ep) => {
-        ep.preventDefault();
-        arrayList = arrayList.pop();
-        // alert(arrayList.pop());
-        alert("Removed Last Item: " + JSON.stringify(arrayList));
-        document.forms[0].reset();
-      }
+    //   const removeArrays = (ep) => {
+    //     ep.preventDefault();
+    //     arrayList = arrayList.pop();
+    //     // alert(arrayList.pop());
+    //     alert("Removed Last Item: " + JSON.stringify(arrayList));
+    //     document.forms[0].reset();
+    //   }
       
 
 
@@ -114,12 +114,12 @@ let arrayList = [];
         sortArrayList;
 
       } 
-      const buttonRemove = document.getElementById('bttnRemove');
+    //   const buttonRemove = document.getElementById('bttnRemove');
 
 
     buttonAdd.addEventListener('click', addTheArrays);
     buttonFinish.addEventListener('click', arraysPrint);
-    buttonRemove.addEventListener('click', removeArrays);
+    // buttonRemove.addEventListener('click', removeArrays);
 
 
 // Happy thanksgiving
