@@ -634,15 +634,43 @@ window.onload = function() {
 
    // MATCH - Used to match to see if certain characters / strings are in needed match
 
-   const CHEEZ_IT = 'test1test2test3';
-   // if (CHEEZ_IT.match('cheese') == 'cheese') {
-   //    alert('true!');
-   // }
-   const regexp = /t(e)(st(\d?))/g;
-   const array = [...CHEEZ_IT.matchAll(regexp)];
+//    const CHEEZ_IT = 'test1test2test3';
+//    // if (CHEEZ_IT.match('cheese') == 'cheese') {
+//    //    alert('true!');
+//    // }
+//    const regexp = /t(e)(st(\d?))/g;
+//    const array = [...CHEEZ_IT.matchAll(regexp)];
 
-   alert(array[0] + " " + array[1] + " " + array[2]);
-   // alert(CHEEZ_IT.matchAll('cheese'));
+//    alert(array[0] + " " + array[1] + " " + array[2]);
+//    // alert(CHEEZ_IT.matchAll('cheese'));
+
+
+
+// NORMALIZE | Code Point UTF-8 = \u0000 , U+0029=\u0029=)
+
+// const dayDream = 'DAYDREAM';
+// // capitalizatino doesn't matter
+// let Rocket = '\u002c';
+// let Bruv = '\u0029';
+
+// let testThis = ')' == Bruv;
+
+// const squiglyN = '\u00F1';
+// const squiglyN2 = '\u006E\u0303';
+
+// let squiglyTest = squiglyN == squiglyN2;
+// // Also returns false for .length
+
+// let normalizeTheTwo = squiglyN2.normalize('NFC');
+// // Returns true for .length
+
+// // alert(squiglyN == normalizeTheTwo);
+// // alert(squiglyTest);
+// // alert(testThis);
+// // alert(Rocket);
+
+// .padEnd() 
 }
+
    
 
