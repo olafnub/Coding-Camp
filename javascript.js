@@ -712,6 +712,17 @@ window.onload = function() {
 // alert(actualReplaceE2);
 // alert(planet.replace(regexpo, 'bruv'));
 // alert(replaceE);
+
+// search() - returns the number starting from 0 of what you're looking for
+
+// const babyYour = 'The@ baby wa. his Constant';
+// const tregex = /[^\w\s]/g;
+// const findCapital = /[A-Z]/;
+
+// alert(babyYour[2]);
+// alert(babyYour.search(findCapital));
+
+// .slice()
 }
 
    
