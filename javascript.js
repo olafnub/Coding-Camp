@@ -686,6 +686,32 @@ window.onload = function() {
 // const samSmith = 'FRIEND ';
 // alert('Never love you like a ' + `${samSmith.repeat(3)}`);
 // alert('2'.repeat(3))
+
+// .replace() & .replaceAll() - must use /g for regexp
+
+// const planet = 'The earth rotates on a y e axis Direction and diREction is a galaxy';
+// replaces whole words and not one characters in words, except for the first search
+// let replaceE = planet.replace('e', 'a');
+// let regexpo = /direction/gi
+// /g is for global - all words | /i is for insensitive 
+
+// let actualReplaceE = planet.replace(/(e)/, 'bye');
+// let actualReplaceE2 = planet.replace("e", "bye");
+
+// let theActualSentence = 'The linkedin Profile picture was then replaced with all other LinkedIn profiles';
+// let regex = /linkedin/ig;
+
+// function safeRedacted(text, name) {
+//    return text.replaceAll(name, '[Redacted]');
+// }
+// let unredactMessage = 'The player 2pkas@ was at practice when they captured him';
+
+// alert(safeRedacted(unredactMessage, '2pkas@'));
+
+// alert(theActualSentence.replaceAll(regex, 'Bob'));
+// alert(actualReplaceE2);
+// alert(planet.replace(regexpo, 'bruv'));
+// alert(replaceE);
 }
 
    
