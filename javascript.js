@@ -646,7 +646,7 @@ window.onload = function() {
 
 
 
-// NORMALIZE | Code Point UTF-8 = \u0000 , U+0029=\u0029=)
+// NORMALIZE | Code Point UTF-8 = \u0000 , U+0029=\u0029=) https://www.utf8-chartable.de/
 
 // const dayDream = 'DAYDREAM';
 // // capitalizatino doesn't matter
@@ -669,7 +669,19 @@ window.onload = function() {
 // // alert(testThis);
 // // alert(Rocket);
 
-// .padEnd() 
+// .padEnd() & .padStart() - adds # of character string to end of called variable starting from 0.
+
+// const sometimesIts = "Hopefully";
+// // will cut off if the word added is over x amount input added onto variable
+// let rightAbout = sometimesIts.padEnd(20, "Y");
+// alert(rightAbout);
+
+// const happy = "HAPPY";
+// let onceIn = happy.padStart(10, 'I am ');
+// alert(onceIn);
+
+
+
 }
 
    
