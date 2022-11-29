@@ -681,7 +681,11 @@ window.onload = function() {
 // alert(onceIn);
 
 
+// .repeat(); repeats the string
 
+// const samSmith = 'FRIEND ';
+// alert('Never love you like a ' + `${samSmith.repeat(3)}`);
+// alert('2'.repeat(3))
 }
 
    
