@@ -631,5 +631,18 @@ window.onload = function() {
 
    // "2">"10" 2<10
 
+
+   // MATCH - Used to match to see if certain characters / strings are in needed match
+
+   const CHEEZ_IT = 'test1test2test3';
+   // if (CHEEZ_IT.match('cheese') == 'cheese') {
+   //    alert('true!');
+   // }
+   const regexp = /t(e)(st(\d?))/g;
+   const array = [...CHEEZ_IT.matchAll(regexp)];
+
+   alert(array[0] + " " + array[1] + " " + array[2]);
+   // alert(CHEEZ_IT.matchAll('cheese'));
 }
    
+
