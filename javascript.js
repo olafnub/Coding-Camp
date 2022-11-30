@@ -646,83 +646,86 @@ window.onload = function() {
 
 
 
-// NORMALIZE | Code Point UTF-8 = \u0000 , U+0029=\u0029=) https://www.utf8-chartable.de/
-
+// NORMALIZE | Code Point UTF-8 = \u0000 , U+0029=\u0029=) https://www.utf8-chartable.de
 // const dayDream = 'DAYDREAM';
 // // capitalizatino doesn't matter
 // let Rocket = '\u002c';
-// let Bruv = '\u0029';
-
+// let Bruv = '\u0029'
 // let testThis = ')' == Bruv;
-
 // const squiglyN = '\u00F1';
 // const squiglyN2 = '\u006E\u0303';
-
 // let squiglyTest = squiglyN == squiglyN2;
 // // Also returns false for .length
-
 // let normalizeTheTwo = squiglyN2.normalize('NFC');
 // // Returns true for .length
-
 // // alert(squiglyN == normalizeTheTwo);
 // // alert(squiglyTest);
 // // alert(testThis);
 // // alert(Rocket);
 
 // .padEnd() & .padStart() - adds # of character string to end of called variable starting from 0.
-
 // const sometimesIts = "Hopefully";
 // // will cut off if the word added is over x amount input added onto variable
 // let rightAbout = sometimesIts.padEnd(20, "Y");
 // alert(rightAbout);
-
 // const happy = "HAPPY";
 // let onceIn = happy.padStart(10, 'I am ');
 // alert(onceIn);
-
-
 // .repeat(); repeats the string
-
 // const samSmith = 'FRIEND ';
 // alert('Never love you like a ' + `${samSmith.repeat(3)}`);
 // alert('2'.repeat(3))
 
 // .replace() & .replaceAll() - must use /g for regexp
-
 // const planet = 'The earth rotates on a y e axis Direction and diREction is a galaxy';
 // replaces whole words and not one characters in words, except for the first search
 // let replaceE = planet.replace('e', 'a');
 // let regexpo = /direction/gi
 // /g is for global - all words | /i is for insensitive 
-
 // let actualReplaceE = planet.replace(/(e)/, 'bye');
 // let actualReplaceE2 = planet.replace("e", "bye");
-
 // let theActualSentence = 'The linkedin Profile picture was then replaced with all other LinkedIn profiles';
 // let regex = /linkedin/ig;
-
 // function safeRedacted(text, name) {
 //    return text.replaceAll(name, '[Redacted]');
 // }
 // let unredactMessage = 'The player 2pkas@ was at practice when they captured him';
-
 // alert(safeRedacted(unredactMessage, '2pkas@'));
-
 // alert(theActualSentence.replaceAll(regex, 'Bob'));
 // alert(actualReplaceE2);
 // alert(planet.replace(regexpo, 'bruv'));
 // alert(replaceE);
 
 // search() - returns the number starting from 0 of what you're looking for
-
 // const babyYour = 'The@ baby wa. his Constant';
 // const tregex = /[^\w\s]/g;
 // const findCapital = /[A-Z]/;
-
 // alert(babyYour[2]);
 // alert(babyYour.search(findCapital));
 
 // .slice()
+// const catSleeps = 'The cat sleeps on the bed';
+// const CAT = /CAT/ig;
+// // const CATString = 'cat';
+// let constructedWord = "";
+// function cutWord(sentence, word) {
+//    let wordLength = word.length;
+//    let searchWordNumber = sentence.search(word);
+//    // alert(searchWordNumber);
+
+//    constructedWord = sentence.slice(0, searchWordNumber);
+//    constructedWord += sentence.slice(searchWordNumber+wordLength, sentence.length);
+//    return constructedWord;
+// }
+// alert(cutWord(catSleeps, CAT));
+// const heyThis = /hi/ig;
+// let stringifyThis = JSON.stringify('hi'.match(heyThis));
+// let stringThisNow = JSON.stringify(heyThis);
+// alert(stringifyThis.length);
+// alert(stringThisNow);
+
+// split()
+
 }
 
    
