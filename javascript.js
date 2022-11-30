@@ -771,7 +771,16 @@ window.onload = function () {
    // alert(modzilla.substring(2, 5));
    
 
-   // .toLocaleLowerCase()
+   // .toLocaleLowerCase() & .toLocaleUpperCase() different uses of 'tr' and 'en-US'
+   // let returnThis = '\u0130'.toLocaleLowerCase('tr') === 'i'; //true
+   // let returnThisI = '\u0130'.toLocaleLowerCase('en-US') === 'i'; // false
+   // alert(returnThisI);
+   // let capitalizeThis = 'i\u0307';
+   // alert(capitalizeThis);
+   // alert(capitalizeThis.toLocaleUpperCase());
+   // alert(capitalizeThis.toUpperCase());
+
+   
 
 }
 
