@@ -795,7 +795,27 @@ window.onload = function () {
    // let stringNumberChairs = numberChairs.toString() + 2;
    // alert(stringNumberChairs + ' ' + typeof stringNumberChairs);
 
-   // .toUpperCase() & .toLowerCase() 
+   // String.prototype.toUpperCase() & .toLowerCase() 
+   // let pillowBrand = 'Mypillow';
+   // const letUpperCase = String.prototype.toUpperCase.call(pillowBrand);
+   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+   // const letLowerCase = String.prototype.toLowerCase.call({
+   //    toString() {
+   //       return pillowBrand;
+   //    },
+   // });
+   // alert(letLowerCase);
+
+   // .trim() && .trimStart() && .trimEnd()
+   // let lotsOfWhiteSpace = '     LET ME KNOW       ';
+   // const removeSpace = lotsOfWhiteSpace.trim();
+   // const removeRightSpace = lotsOfWhiteSpace.trimEnd();
+   // const removeLeftSpace = lotsOfWhiteSpace.trimStart();
+   // String.prototype.trimLeft.name ==='trimStart';
+   // String.prototype.trimRight.name ==='trimEnd';
+   // alert(removeSpacing);
+
+   // .valueOf() 
 }
 
 
