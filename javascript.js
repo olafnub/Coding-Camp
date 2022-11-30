@@ -838,6 +838,9 @@ window.onload = function () {
    // console.log(strsIter.next().value);
    // console.log(strsIter.next().value);
    
+   //  Done with https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/@@iterator
+
+   
 }
 
 
