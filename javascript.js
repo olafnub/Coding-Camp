@@ -747,7 +747,7 @@ window.onload = function () {
    // myVersionOfThis(sentenceForThat, splitChar);
    // countThis(monthsOf, commaSplit);
    
-   // startsWith('character', posiiton);
+   // startsWith('character', posiitong);
    // const morningSunshine = 'This saturday is a good day';
    // alert(morningSunshine.startsWith('T'));
 //    let randomLength = 'The word of this determines good day or better day';
@@ -764,9 +764,15 @@ window.onload = function () {
 //    alert('today is a better day than yesterday');
 // }
 
-// substring()
-
+// substring() - basically splice the sentence with numbers
+   // const modzilla = 'gozilla';
+   // // alert(modzilla.substring(3,7)); //illa
+   // // alert(modzilla.substring(3, 10)); //illa
+   // alert(modzilla.substring(2, 5));
    
+
+   // .toLocaleLowerCase()
+
 }
 
 
