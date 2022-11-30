@@ -1,14 +1,14 @@
-let message="Hello!"; //store the string "Hello!" in the variable named message
+let message = "Hello!"; //store the string "Hello!" in the variable named message
 
 // alert(message);
 
-let user='John';
-let age=25;
-let messages='hello';
+let user = 'John';
+let age = 25;
+let messages = 'hello';
 
 // let user='john', age=25, messages='hello';
 
-let hello="Hello World!";
+let hello = "Hello World!";
 let replacement = hello;
 // alert(replacement);
 
@@ -47,14 +47,14 @@ typeof myFloat;
 
 let myNumber = 74;
 while (myNumber < 100) {
-myNumber += 3;
+   myNumber += 3;
 }
 // console.log(
 //     myNumber
 // );
 
 let myString = "74";
-myString= Number(myString);
+myString = Number(myString);
 // console.log(myString + 2);
 
 let NUMBER_FOUR = 4;
@@ -70,7 +70,7 @@ let numberOne, numberTwo, numberThree;
 numberTwo = 5;
 
 
-numberOne = numberTwo = numberThree = 2+2;
+numberOne = numberTwo = numberThree = 2 + 2;
 // console.log(numberOne + " " + numberTwo);
 
 let q = 2;
@@ -95,8 +95,8 @@ counter = 3 * ++multiplyEqualsTwo;
 // alert(counter);
 counter++;
 
-for (a=1, b=3, c=a+b; a<10; a++) {
-    // console.log(a);
+for (a = 1, b = 3, c = a + b; a < 10; a++) {
+   // console.log(a);
 }
 
 let alphabet = 1;
@@ -144,27 +144,27 @@ var newMessage = "42";
 // console.log(newMessage-2);
 
 if (true) {
-    var testVariable = true;
+   var testVariable = true;
 
 }
 // alert(testVariable);
 
 for (var iAn = 0; iAn <= 10;) {
-    var one = 1;
-    iAn++;
+   var one = 1;
+   iAn++;
 }
 // console.log(one);
 // console.log(iAn + " ");
 
 for (let iBn = 0; iBn <= 10; iBn++) {
-    // console.log(iBn);
+   // console.log(iBn);
 }
 
 function sayHi() {
-    if(true) {
-        var phrase = "Hello";
-    }
-    alert(phrase);
+   if (true) {
+      var phrase = "Hello";
+   }
+   alert(phrase);
 }
 
 // sayHi();
@@ -189,7 +189,7 @@ function sayHi() {
 // sayHi();
 
 // (function() {
-    
+
 //     var importantMessage = "Hello World";
 
 //     alert(importantMessage);
@@ -231,7 +231,7 @@ let ageName = false;
 nameAge = "anthony";
 ageName = "Joe";
 
-let isGreater = 4>1;
+let isGreater = 4 > 1;
 
 let valueNull = null;
 let unAssigned;
@@ -257,7 +257,7 @@ const songName = "Coast";
 const myRating = 9;
 const maxRating = 10;
 const output = `The song ${songName} is amazing and I give it a rating of
-${myRating}/${maxRating}, a score of ${myRating/maxRating * 100}%`;
+${myRating}/${maxRating}, a score of ${myRating / maxRating * 100}%`;
 
 // console.log(output);
 
@@ -266,7 +266,7 @@ ${myRating}/${maxRating}, a score of ${myRating/maxRating * 100}%`;
 // document.getElementById("textCount").innerHTML = nas.length;
 // }
 
-window.onload = function() {
+window.onload = function () {
    let doorDash = "Papa John's, JJ's Poke, Frank & Andreas";
    let doorDashSplit = doorDash.substr(13, 9);
    document.getElementById("foodWord").innerHTML = doorDashSplit;
@@ -281,26 +281,26 @@ window.onload = function() {
 
    let introButton = document.getElementById("intro");
    let introPara = document.getElementById("intro-p");
-   
+
    introButton.addEventListener("click", myIntro);
    function myIntro() {
-   introPara.textContent = introPara.textContent.toUpperCase();
+      introPara.textContent = introPara.textContent.toUpperCase();
    }
 
    let lotsOfSpace = "     HELLO WORLD!      ";
    let spaceTrim = lotsOfSpace.trim();
-   document.getElementById("spacing").innerHTML = 
-   "length= " + lotsOfSpace.length + "<br> trimmed length = " + spaceTrim.length;
-   
+   document.getElementById("spacing").innerHTML =
+      "length= " + lotsOfSpace.length + "<br> trimmed length = " + spaceTrim.length;
+
    let grape = "grape";
    let grapeFruit = grape.padEnd(10, "Fruit");
    document.getElementById("fruit").innerHTML = grapeFruit;
 
    let waterCup = "water cup";
    document.getElementById("cup").innerHTML = waterCup +
-   "--" + waterCup.charAt(0) + "'s unicode is " + 
-   waterCup.charCodeAt(0) + "<br>" + waterCup[1] + 
-   "'s uncode is " + waterCup.charCodeAt(1);
+      "--" + waterCup.charAt(0) + "'s unicode is " +
+      waterCup.charCodeAt(0) + "<br>" + waterCup[1] +
+      "'s uncode is " + waterCup.charCodeAt(1);
 
    let journalTitles = "Diary, {user}'s Diary, Public Diary, My Book";
    let arrayList = journalTitles.split(",");
@@ -308,36 +308,36 @@ window.onload = function() {
 
    let myJournal = arrayList[0];
    let myArr = myJournal.split("");
-//    alert(myJournal);
+   //    alert(myJournal);
    let journalSpace = "";
-   for (let i=0; i < myArr.length; i++) {
-//    alert(myArr[1]);
-   journalSpace+=myArr[i] + "&nbsp;&nbsp;";
+   for (let i = 0; i < myArr.length; i++) {
+      //    alert(myArr[1]);
+      journalSpace += myArr[i] + "&nbsp;&nbsp;";
 
    }
-   document.getElementById("journal-title").innerHTML = journalSpace; 
-   
+   document.getElementById("journal-title").innerHTML = journalSpace;
+
    let bagAmount = 2;
    let bagString = new String(bagAmount);
-//    console.log(typeof bagString);
+   //    console.log(typeof bagString);
 
    let a = "a";
    let b = "b";
 
    function greaterOrLess() {
-    if (a<b) {
-    console.log(`${a} is less than ${b}`);
-   } else if (a>b) {
-    console.log(`${a} is greater than ${b}`);
-   } else {
-    console.log(`${a} is equal to ${b}`);
+      if (a < b) {
+         console.log(`${a} is less than ${b}`);
+      } else if (a > b) {
+         console.log(`${a} is greater than ${b}`);
+      } else {
+         console.log(`${a} is equal to ${b}`);
+      }
+
+
    }
-
-
-}
    function areEqualCaseInsensitive() {
-   let doTheyMatch = waterCup.toLowerCase() === myJournal.toLowerCase();
-   console.log(doTheyMatch);
+      let doTheyMatch = waterCup.toLowerCase() === myJournal.toLowerCase();
+      console.log(doTheyMatch);
    }
 
    let longString = "You don't need me As much as I need you \
@@ -345,12 +345,12 @@ window.onload = function() {
    'Cause you know that's the truth 'Cause you \
    know that's the truth";
    document.getElementById("1036Lyric").innerHTML = longString +
-   "<br> Checking if the song has the word \"love\" ... " + 
-   longString.includes("love") + "<br> Though this \
+      "<br> Checking if the song has the word \"love\" ... " +
+      longString.includes("love") + "<br> Though this \
    song does include \"truth\" - starting from 0 \
-   it is " + longString.toLowerCase().indexOf("truth") + 
-   "<br> The last \"truth\" is " + longString.toLowerCase().lastIndexOf("truth") +
-   "<br> The length of the text is " + longString.length;
+   it is " + longString.toLowerCase().indexOf("truth") +
+      "<br> The last \"truth\" is " + longString.toLowerCase().lastIndexOf("truth") +
+      "<br> The length of the text is " + longString.length;
 
 
    let compareChar = '2'.localeCompare('1');
@@ -360,21 +360,21 @@ window.onload = function() {
    // console.log(compareWords);
 
    let arrayFlowers = ["dandelions", "daisys", "floral", "blue flowers"];
-   let arrangedFlowers = arrayFlowers.sort((a, b) => a.localeCompare(b, "fr", { ignorePunctuation : true}));
-//    console.log(arrangedFlowers);
+   let arrangedFlowers = arrayFlowers.sort((a, b) => a.localeCompare(b, "fr", { ignorePunctuation: true }));
+   //    console.log(arrangedFlowers);
 
    let wordRepeat = /[A-Z]/ig;
-//    console.log(longString.match(wordRepeat));
+   //    console.log(longString.match(wordRepeat));
 
    let whatWord = /(?<song>Take|around) it or leave/;
    let thisWord = longString.match(whatWord);
    document.getElementById("findWord").innerHTML = thisWord;
 
-//    I WILL GET THROUGH https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
-// start over
+   //    I WILL GET THROUGH https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+   // start over
 
    let myNameIs = "Speed, Andy, Kolly";
-//    console.log(String.fromCodePoint(0xd834, 0xdf06, 0x61, 0xd834, 0xdf07));
+   //    console.log(String.fromCodePoint(0xd834, 0xdf06, 0x61, 0xd834, 0xdf07));
 
 
    // console.log(String.raw`Hi\n${2+3}!`);
@@ -382,10 +382,10 @@ window.onload = function() {
    // console.log(String.raw`my name is \${myNameIs}!\${companyIntroduction}`);
    // console.log(`Hi, my name is \${myNameIs}`)
 
-   let wordSplit = String.raw({raw: 'test'}, "<br>");
+   let wordSplit = String.raw({ raw: 'test' }, "<br>");
    // console.log(wordSplit);
 
-   let html = (strings, ...values) => String.raw({raw: strings}, ...values);
+   let html = (strings, ...values) => String.raw({ raw: strings }, ...values);
    // let html = String.raw;
    let doc = html`<canvas>\n</canvas>`;
    //  console.log(doc);
@@ -393,9 +393,9 @@ window.onload = function() {
    let myNameIsLength = myNameIs.length;
    // console.log(myNameIsLength);
 
-   let buildName ="";
-   for (i=0; i<myNameIsLength; i++) {
-      buildName+=myNameIs.charAt(i);
+   let buildName = "";
+   for (i = 0; i < myNameIsLength; i++) {
+      buildName += myNameIs.charAt(i);
    }
    // console.log(buildName);
    // length does not need ()
@@ -443,17 +443,17 @@ window.onload = function() {
    // }
 
    let strNameSpell;
-   for (i=0; i < strName.length; i++) {
+   for (i = 0; i < strName.length; i++) {
       strNameSpell += strName.charAt(i);
    }
    let strNameOutput = `strName = ${strName}\nstrNameSpell = ${strNameSpell}\n`
-   + strName.charAt(0) + strName.charAt(1) + strName.charAt(2) + strName.charAt(3) + strName.charAt(4);
+      + strName.charAt(0) + strName.charAt(1) + strName.charAt(2) + strName.charAt(3) + strName.charAt(4);
    // console.log(strNameOutput);
 
    let STRING_OBJECT = new String("Hello");
    // console.log(typeof STRING_OBJECT);
    // alert(STRING_OBJECT);
-   
+
    let numberWord = String.fromCodePoint(9731, 9733, "9842", 0x2F804);
    let UNICODE_H = String.fromCodePoint(0x48);
    let AZ = String.fromCodePoint(65, 90);
@@ -464,14 +464,14 @@ window.onload = function() {
    // console.log(UNICODE_H.toLowerCase());
    // console.log(numberWord);
 
-   let printFile =  "C:\Development\profile\aboutme.html";
+   let printFile = "C:\Development\profile\aboutme.html";
    let printFileRaw = String.raw`C:\Development\profile\aboutme.html`;
    // let printFileWord = `C:\Development\profile\aboutme.html`;
    // console.log(printFileRaw);
    // console.log(String.raw(strings, ...substitutions));
    // console.log(String.raw(`templateString`));
    // console.log(printFileWord);
-   let rawArray = { raw: ['food', 'tell', 'foo']};
+   let rawArray = { raw: ['food', 'tell', 'foo'] };
    // let getArray = { String: ['food', 'tell', 'show']};
    // console.log(rawArray);
    // console.log(getArray[0]);
@@ -488,18 +488,18 @@ window.onload = function() {
       // substitution vars first.
       let output = '';
       for (let i = 0; i < values.length; i++) {
-        output += strings[i] + values[i];
+         output += strings[i] + values[i];
       }
       output += strings[values.length];
-    
+
       // Split on newlines.
       let lines = output.split(/(?:\r\n|\n|\r)/);
-    
+
       // Rip out the leading whitespace.
       return lines.map((line) => {
-        return line.replace(/^\s+/gm, '');
+         return line.replace(/^\s+/gm, '');
       }).join(' ').trim();
-    }
+   }
    function getLength(str) {
       return str.length;
    }
@@ -512,12 +512,12 @@ window.onload = function() {
       return functionCode;
    }
    // alert(getCharaLength(functionCode));
-   
+
    let getCharaReturn = getCharaLength(functionCode);
    let getLengthReturn = getLength(functionCode);
 
    // alert(getLengthReturn);
-   
+
    // console.log(singleLineString`${getCharaReturn}`);
    //  console.log("print " + functionCode
    //  + "\ngetCharaLength = " + singleLineString`${getCharaReturn}` 
@@ -541,7 +541,7 @@ window.onload = function() {
    // console.log(findWord(introductionSpeech, wordInput));
 
    function lilNasLyric() {
-   let dontWantItLyrics = `If I say so, know they gon' ride <br>
+      let dontWantItLyrics = `If I say so, know they gon' ride <br>
    I know G's, and you know they ain't nice <br>
    If I pop up, I'ma want it, but I get by <br>
    Tell the devil I can't have him inside (woah) <br>
@@ -550,22 +550,22 @@ window.onload = function() {
    Tell the reaper he don't want it, he don't want it <br>
    Oh, I know everything's gonna be alright`;
 
-   document.getElementById("lilNas").innerHTML = dontWantItLyrics;
+      document.getElementById("lilNas").innerHTML = dontWantItLyrics;
 
 
-   let userFindLyric = prompt("Search lyric in chorus of 'Don't Want It' By Lil NasX");
-   alert("Check below to see if your word is there");
-   
-   let returnLyricStatement = findWord(dontWantItLyrics, userFindLyric);
+      let userFindLyric = prompt("Search lyric in chorus of 'Don't Want It' By Lil NasX");
+      alert("Check below to see if your word is there");
 
-   let returnLyricP = `The word you're searching for "${userFindLyric}" ${returnLyricStatement} in the chorus`;
-   document.getElementById("searchedWord").innerHTML = returnLyricP;
+      let returnLyricStatement = findWord(dontWantItLyrics, userFindLyric);
+
+      let returnLyricP = `The word you're searching for "${userFindLyric}" ${returnLyricStatement} in the chorus`;
+      document.getElementById("searchedWord").innerHTML = returnLyricP;
 
    }
    // lilNasLyric();
-   
+
    function endsWithFunction() {
-      let pillowDescription = "The pillow has a white cover"; 
+      let pillowDescription = "The pillow has a white cover";
 
       let checkEndsWith = pillowDescription.endsWith("cover");
       let checkEndsWithNumber = pillowDescription.endsWith("cove", 27);
@@ -575,7 +575,7 @@ window.onload = function() {
 
    }
    // endsWithFunction();
-   
+
    function returnIndexOf() {
       const userPhone = 'i-phone-8ee';
       const findLetter = 'e';
@@ -585,13 +585,13 @@ window.onload = function() {
 
       while (returnFindLetter !== -1) {
          amountOfLetters++;
-         returnFindLetter = userPhone.indexOf(findLetter, returnFindLetter+1);
+         returnFindLetter = userPhone.indexOf(findLetter, returnFindLetter + 1);
 
       }
       // return userPhone.indexOf(findLetter) + " " + userPhone.indexOf(findNonLetter);
       return amountOfLetters;
-      
-      
+
+
    }
    // console.log(returnIndexOf());
 
@@ -634,99 +634,123 @@ window.onload = function() {
 
    // MATCH - Used to match to see if certain characters / strings are in needed match
 
-//    const CHEEZ_IT = 'test1test2test3';
-//    // if (CHEEZ_IT.match('cheese') == 'cheese') {
-//    //    alert('true!');
-//    // }
-//    const regexp = /t(e)(st(\d?))/g;
-//    const array = [...CHEEZ_IT.matchAll(regexp)];
+   //    const CHEEZ_IT = 'test1test2test3';
+   //    // if (CHEEZ_IT.match('cheese') == 'cheese') {
+   //    //    alert('true!');
+   //    // }
+   //    const regexp = /t(e)(st(\d?))/g;
+   //    const array = [...CHEEZ_IT.matchAll(regexp)];
 
-//    alert(array[0] + " " + array[1] + " " + array[2]);
-//    // alert(CHEEZ_IT.matchAll('cheese'));
+   //    alert(array[0] + " " + array[1] + " " + array[2]);
+   //    // alert(CHEEZ_IT.matchAll('cheese'));
 
 
 
-// NORMALIZE | Code Point UTF-8 = \u0000 , U+0029=\u0029=) https://www.utf8-chartable.de
-// const dayDream = 'DAYDREAM';
-// // capitalizatino doesn't matter
-// let Rocket = '\u002c';
-// let Bruv = '\u0029'
-// let testThis = ')' == Bruv;
-// const squiglyN = '\u00F1';
-// const squiglyN2 = '\u006E\u0303';
-// let squiglyTest = squiglyN == squiglyN2;
-// // Also returns false for .length
-// let normalizeTheTwo = squiglyN2.normalize('NFC');
-// // Returns true for .length
-// // alert(squiglyN == normalizeTheTwo);
-// // alert(squiglyTest);
-// // alert(testThis);
-// // alert(Rocket);
+   // NORMALIZE | Code Point UTF-8 = \u0000 , U+0029=\u0029=) https://www.utf8-chartable.de
+   // const dayDream = 'DAYDREAM';
+   // // capitalizatino doesn't matter
+   // let Rocket = '\u002c';
+   // let Bruv = '\u0029'
+   // let testThis = ')' == Bruv;
+   // const squiglyN = '\u00F1';
+   // const squiglyN2 = '\u006E\u0303';
+   // let squiglyTest = squiglyN == squiglyN2;
+   // // Also returns false for .length
+   // let normalizeTheTwo = squiglyN2.normalize('NFC');
+   // // Returns true for .length
+   // // alert(squiglyN == normalizeTheTwo);
+   // // alert(squiglyTest);
+   // // alert(testThis);
+   // // alert(Rocket);
 
-// .padEnd() & .padStart() - adds # of character string to end of called variable starting from 0.
-// const sometimesIts = "Hopefully";
-// // will cut off if the word added is over x amount input added onto variable
-// let rightAbout = sometimesIts.padEnd(20, "Y");
-// alert(rightAbout);
-// const happy = "HAPPY";
-// let onceIn = happy.padStart(10, 'I am ');
-// alert(onceIn);
-// .repeat(); repeats the string
-// const samSmith = 'FRIEND ';
-// alert('Never love you like a ' + `${samSmith.repeat(3)}`);
-// alert('2'.repeat(3))
+   // .padEnd() & .padStart() - adds # of character string to end of called variable starting from 0.
+   // const sometimesIts = "Hopefully";
+   // // will cut off if the word added is over x amount input added onto variable
+   // let rightAbout = sometimesIts.padEnd(20, "Y");
+   // alert(rightAbout);
+   // const happy = "HAPPY";
+   // let onceIn = happy.padStart(10, 'I am ');
+   // alert(onceIn);
+   // .repeat(); repeats the string
+   // const samSmith = 'FRIEND ';
+   // alert('Never love you like a ' + `${samSmith.repeat(3)}`);
+   // alert('2'.repeat(3))
 
-// .replace() & .replaceAll() - must use /g for regexp
-// const planet = 'The earth rotates on a y e axis Direction and diREction is a galaxy';
-// replaces whole words and not one characters in words, except for the first search
-// let replaceE = planet.replace('e', 'a');
-// let regexpo = /direction/gi
-// /g is for global - all words | /i is for insensitive 
-// let actualReplaceE = planet.replace(/(e)/, 'bye');
-// let actualReplaceE2 = planet.replace("e", "bye");
-// let theActualSentence = 'The linkedin Profile picture was then replaced with all other LinkedIn profiles';
-// let regex = /linkedin/ig;
-// function safeRedacted(text, name) {
-//    return text.replaceAll(name, '[Redacted]');
-// }
-// let unredactMessage = 'The player 2pkas@ was at practice when they captured him';
-// alert(safeRedacted(unredactMessage, '2pkas@'));
-// alert(theActualSentence.replaceAll(regex, 'Bob'));
-// alert(actualReplaceE2);
-// alert(planet.replace(regexpo, 'bruv'));
-// alert(replaceE);
+   // .replace() & .replaceAll() - must use /g for regexp
+   // const planet = 'The earth rotates on a y e axis Direction and diREction is a galaxy';
+   // replaces whole words and not one characters in words, except for the first search
+   // let replaceE = planet.replace('e', 'a');
+   // let regexpo = /direction/gi
+   // /g is for global - all words | /i is for insensitive 
+   // let actualReplaceE = planet.replace(/(e)/, 'bye');
+   // let actualReplaceE2 = planet.replace("e", "bye");
+   // let theActualSentence = 'The linkedin Profile picture was then replaced with all other LinkedIn profiles';
+   // let regex = /linkedin/ig;
+   // function safeRedacted(text, name) {
+   //    return text.replaceAll(name, '[Redacted]');
+   // }
+   // let unredactMessage = 'The player 2pkas@ was at practice when they captured him';
+   // alert(safeRedacted(unredactMessage, '2pkas@'));
+   // alert(theActualSentence.replaceAll(regex, 'Bob'));
+   // alert(actualReplaceE2);
+   // alert(planet.replace(regexpo, 'bruv'));
+   // alert(replaceE);
 
-// search() - returns the number starting from 0 of what you're looking for
-// const babyYour = 'The@ baby wa. his Constant';
-// const tregex = /[^\w\s]/g;
-// const findCapital = /[A-Z]/;
-// alert(babyYour[2]);
-// alert(babyYour.search(findCapital));
+   // search() - returns the number starting from 0 of what you're looking for
+   // const babyYour = 'The@ baby wa. his Constant';
+   // const tregex = /[^\w\s]/g;
+   // const findCapital = /[A-Z]/;
+   // alert(babyYour[2]);
+   // alert(babyYour.search(findCapital));
 
-// .slice()
-// const catSleeps = 'The cat sleeps on the bed';
-// const CAT = /CAT/ig;
-// // const CATString = 'cat';
-// let constructedWord = "";
-// function cutWord(sentence, word) {
-//    let wordLength = word.length;
-//    let searchWordNumber = sentence.search(word);
-//    // alert(searchWordNumber);
+   // .slice()
+   // const catSleeps = 'The cat sleeps on the bed';
+   // const CAT = /CAT/ig;
+   // // const CATString = 'cat';
+   // let constructedWord = "";
+   // function cutWord(sentence, word) {
+   //    let wordLength = word.length;
+   //    let searchWordNumber = sentence.search(word);
+   //    // alert(searchWordNumber);
 
-//    constructedWord = sentence.slice(0, searchWordNumber);
-//    constructedWord += sentence.slice(searchWordNumber+wordLength, sentence.length);
-//    return constructedWord;
-// }
-// alert(cutWord(catSleeps, CAT));
-// const heyThis = /hi/ig;
-// let stringifyThis = JSON.stringify('hi'.match(heyThis));
-// let stringThisNow = JSON.stringify(heyThis);
-// alert(stringifyThis.length);
-// alert(stringThisNow);
+   //    constructedWord = sentence.slice(0, searchWordNumber);
+   //    constructedWord += sentence.slice(searchWordNumber+wordLength, sentence.length);
+   //    return constructedWord;
+   // }
+   // alert(cutWord(catSleeps, CAT));
+   // const heyThis = /hi/ig;
+   // let stringifyThis = JSON.stringify('hi'.match(heyThis));
+   // let stringThisNow = JSON.stringify(heyThis);
+   // alert(stringifyThis.length);
+   // alert(stringThisNow);
+   
+   // split() - Splits everything into an array
+   // const cffIt = 'Feeling like falling in love';
+   // let findSplitWord = cffIt.split(' ');
+   // let findSplitChar = cffIt.split('');
+   // alert(findSplitChar[3]);
+   // function myVersionOfThis(sentence, splitter) {
+   //    let splitThis = sentence.split(splitter);
+   //    alert(splitThis.join('/'));
+   // }
+   // function countThis(stringGiven, remove) {
+   //    const pinno = stringGiven.split(remove);
+   //    alert(pinno.length);
+   // }
+   // let sentenceForThat = 'The sentence for that';
+   // let monthsOf = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec';
+   // let splitChar = ' ';
+   // let commaSplit = ',';
+   // let splitChart = 'Like';
+   // let splitted = splitChart.split(splitChar);
+   // alert(splitChar.split(spl));
+   // myVersionOfThis(sentenceForThat, splitChar);
+   // countThis(monthsOf, commaSplit);
+   
 
-// split()
-
-}
 
    
+}
+
+
 
