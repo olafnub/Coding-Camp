@@ -819,6 +819,25 @@ window.onload = function () {
    // let dudu = new String('cat');
    // console.log(dudu.valueOf());
 
+   // String.prototype[@@iterator]()
+   // const strs = 'A\uD835\uDC86B\uD835\uDC69C\uD835\uDC6A';
+   // for (const v of strs) {
+      // alert(v);
+      // console.log(v);
+   // }
+   // const numberCount = '12345';
+   // const thisAndThat = 'this and that';
+   // for (const x of thisAndThat) {
+   //    if (x == 't') {
+   //    console.log(x);
+   // } else {
+   //    console.log('none');
+   // }
+   // }
+   // const strsIter = strs[Symbol.iterator]();
+   // console.log(strsIter.next().value);
+   // console.log(strsIter.next().value);
+   
 }
 
 
