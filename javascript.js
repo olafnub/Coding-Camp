@@ -723,7 +723,7 @@ window.onload = function () {
    // let stringThisNow = JSON.stringify(heyThis);
    // alert(stringifyThis.length);
    // alert(stringThisNow);
-   
+
    // split() - Splits everything into an array
    // const cffIt = 'Feeling like falling in love';
    // let findSplitWord = cffIt.split(' ');
@@ -747,7 +747,24 @@ window.onload = function () {
    // myVersionOfThis(sentenceForThat, splitChar);
    // countThis(monthsOf, commaSplit);
    
+   // startsWith('character', posiiton);
+   // const morningSunshine = 'This saturday is a good day';
+   // alert(morningSunshine.startsWith('T'));
+//    let randomLength = 'The word of this determines good day or better day';
+//    let answerBeMe = '';
+//    if (randomLength.length%2 == 0) {
+//    answerBeMe = 'good';
+// } else {
+//    answerBeMe = 'better';
+// }
+// let sentenceBeMe = `${answerBeMe} day today`;
+// if (sentenceBeMe.startsWith('g')) {
+//    alert('today is a good day');
+// } else {
+//    alert('today is a better day than yesterday');
+// }
 
+// substring()
 
    
 }
