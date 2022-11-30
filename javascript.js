@@ -780,8 +780,22 @@ window.onload = function () {
    // alert(capitalizeThis.toLocaleUpperCase());
    // alert(capitalizeThis.toUpperCase());
 
-   
+   // .toString();
+   // const stringThis = new String('Heyllo');
+   // const toStringThis = stringThis.toString();
+   // alert(stringThis);
+   // const stringObj = new String('foo');
+   // alert(stringObj[0]);
+   // console.log(toStringThis);
+   // let brownsChair = new Object('heyYall');
+   // let convertBrownsChair = brownsChair.toString();
+   // let arrayChairs = ['Chair 1', ' Chair 2', ' Char 3'];
+   // let stringChairs = arrayChairs.toString();
+   // let numberChairs = 1 + 3;
+   // let stringNumberChairs = numberChairs.toString() + 2;
+   // alert(stringNumberChairs + ' ' + typeof stringNumberChairs);
 
+   // .toUpperCase() & .toLowerCase() 
 }
 
 
