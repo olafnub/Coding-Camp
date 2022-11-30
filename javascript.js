@@ -815,7 +815,10 @@ window.onload = function () {
    // String.prototype.trimRight.name ==='trimEnd';
    // alert(removeSpacing);
 
-   // .valueOf() 
+   // .valueOf()  - basically same as stringOf, turns string objects into string
+   // let dudu = new String('cat');
+   // console.log(dudu.valueOf());
+
 }
 
 
