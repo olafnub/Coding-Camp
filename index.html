@@ -11,7 +11,7 @@
 
 <body>
     <ul>
-    <li><a href="vocabulary.html">Vocabulary</a></li>
+        <li><a href="vocabulary.html">Vocabulary</a></li>
     </ul>
     <button id="machineLearning">Start machine</button>
     <p>This machine is stopped</p>
@@ -22,10 +22,10 @@
     <p id="foodWord"></p>
     <p id="companyName"></p>
     <p id="catAndDog"></p>
-    
+
     <button id="intro">Introduction Button</button>
     <p id="intro-p">Welcome to the new Generation of Programming!</p>
-    
+
     <p>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLO WORLD!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</p>
     <p id="spacing"></p>
 
@@ -48,83 +48,90 @@
     </form>
     <button id='bttnFinish'>Finished</button>
 
-        <p id='userListWords'></p>
-    
+    <p id='userListWords'></p>
+
+    <!-- starts with & and ends with ;  -->
+    <p>Out in atlanta<sub>&reg;</sub><sup>&trade;</sup></p>
+    <hr>
+    <p>drake &amp; drake &spades;</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore consequatur quam illum! Suscipit ad deleniti molestias quae ab ipsam voluptas 
+        illum. Ipsa, rem deleniti tenetur saepe voluptates corporis!</p>
     <script>
 
-    const lyeStrong = document.getElementById("machineLearning");
-    const ttxt = document.querySelector("p");
+        const lyeStrong = document.getElementById("machineLearning");
+        const ttxt = document.querySelector("p");
 
-    lyeStrong.addEventListener("click", bbtnCreate);
+        lyeStrong.addEventListener("click", bbtnCreate);
 
-    function bbtnCreate() {
-    if (lyeStrong.textContent === "Start machine") {
-        lyeStrong.textContent = "Stop machine";
-        ttxt.textContent = "The machine is running";
-    } else {
-        lyeStrong.textContent = "Start machine";
-        ttxt.textContent = "The machine is stopped";
-    }
-}
-    const molly = document.getElementById("secondButton");
+        function bbtnCreate() {
+            if (lyeStrong.textContent === "Start machine") {
+                lyeStrong.textContent = "Stop machine";
+                ttxt.textContent = "The machine is running";
+            } else {
+                lyeStrong.textContent = "Start machine";
+                ttxt.textContent = "The machine is stopped";
+            }
+        }
+        const molly = document.getElementById("secondButton");
 
-    function greetMe() {
-    const name = prompt("What is your name?");
-    alert(`Hello ${name}, nice to see you!`);
-    }
+        function greetMe() {
+            const name = prompt("What is your name?");
+            alert(`Hello ${name}, nice to see you!`);
+        }
 
-    molly.addEventListener("click", greetMe);
+        molly.addEventListener("click", greetMe);
 
-// localeCompare Numbering
-// https://youtu.be/NxVCq4p0Kb0
-
-
-let arrayList = []; 
-
-      
-
-      const addTheArrays = (ev) => {
-        ev.preventDefault();
-
-        let userInput = document.getElementById('txt').value;
-
-        arrayList.push(userInput);
-        document.forms[0].reset();
-        
-        alert(JSON.stringify(arrayList));
-        
-      }
-
-    //   const removeArrays = (ep) => {
-    //     ep.preventDefault();
-    //     arrayList = arrayList.pop();
-    //     // alert(arrayList.pop());
-    //     alert("Removed Last Item: " + JSON.stringify(arrayList));
-    //     document.forms[0].reset();
-    //   }
-      
+        // localeCompare Numbering
+        // https://youtu.be/NxVCq4p0Kb0
 
 
-      const buttonAdd = document.getElementById('bttnAdd');
-      const buttonFinish = document.getElementById('bttnFinish');
-      function arraysPrint() {
-        let stringifyArrayList = JSON.stringify(arrayList);
-        let sortArrayList = arrayList.sort((a, b) => a.localeCompare(b));
-        document.getElementById('userListWords').innerHTML = "Sorted List: "
-        sortArrayList;
-
-      } 
-    //   const buttonRemove = document.getElementById('bttnRemove');
+        let arrayList = [];
 
 
-    buttonAdd.addEventListener('click', addTheArrays);
-    buttonFinish.addEventListener('click', arraysPrint);
+
+        const addTheArrays = (ev) => {
+            ev.preventDefault();
+
+            let userInput = document.getElementById('txt').value;
+
+            arrayList.push(userInput);
+            document.forms[0].reset();
+
+            alert(JSON.stringify(arrayList));
+
+        }
+
+        //   const removeArrays = (ep) => {
+        //     ep.preventDefault();
+        //     arrayList = arrayList.pop();
+        //     // alert(arrayList.pop());
+        //     alert("Removed Last Item: " + JSON.stringify(arrayList));
+        //     document.forms[0].reset();
+        //   }
+
+
+
+        const buttonAdd = document.getElementById('bttnAdd');
+        const buttonFinish = document.getElementById('bttnFinish');
+        function arraysPrint() {
+            let stringifyArrayList = JSON.stringify(arrayList);
+            let sortArrayList = arrayList.sort((a, b) => a.localeCompare(b));
+            document.getElementById('userListWords').innerHTML = "Sorted List: "
+            sortArrayList;
+
+        }
+        //   const buttonRemove = document.getElementById('bttnRemove');
+
+
+        buttonAdd.addEventListener('click', addTheArrays);
+        buttonFinish.addEventListener('click', arraysPrint);
     // buttonRemove.addEventListener('click', removeArrays);
-
+    
+        
 
 // Happy thanksgiving
-   
-   </script>
+
+    </script>
 </body>
 
 </html>

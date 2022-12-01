@@ -840,7 +840,25 @@ window.onload = function () {
    
    //  Done with https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/@@iterator
 
-   
+   // Comparing https://javascript.info/comparison
+   // only alerts the false and not the string
+   // alert('is false' + 1 == 0);
+   // let hennepin = 0;
+   // let county = '0';
+   // alert(Boolean(hennepin));
+   // alert(Boolean(county));
+   // alert(hennepin == county);
+   // alert(0 == false); // Because 0 false is converted to 0 and so is ''==false -> true | operands of different types are converted to 0 if empty
+   // alert(0 === false); //causes no conversion
+   // let numberCoco; // doesn't get converted to 0
+   // alert('' == 0);
+   // alert(0 == null); // returns false, the null operator doesn't get converted
+   // alert(null >= 0); // returns true because when using comparison, it converts to a number
+   // alert(null > 0); //returns false 
+   // alert(undefined == 0); //undefined compared to any number is false
+   // alert(undefined < 1); //returns false because undefined is converted to NaN
+   // alert(null == undefined); //couple, only these two equal each other except for ===
+
 }
 
 
