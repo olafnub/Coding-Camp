@@ -859,6 +859,19 @@ window.onload = function () {
    // alert(undefined < 1); //returns false because undefined is converted to NaN
    // alert(null == undefined); //couple, only these two equal each other except for ===
 
+   // Conditionals - if, else, if else https://www.w3schools.com/js/js_if_else.asp
+   // let greetingsDay = '';
+   // if (new Date().getHours() < 10) {
+   //    greetingsDay = 'Good Morning Today!';
+   // } else if (new Date().getHours() < 20) {
+   //    greetingsDay = 'Good noon Today!';
+   // }
+   // else {
+   //    greetingsDay = 'Good night!';
+   // }
+   // alert(greetingsDay);
+
+
 }
 
 
