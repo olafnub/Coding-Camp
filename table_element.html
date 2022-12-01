@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Element</title>
+</head>
+<body>
+ <!-- Working with td, tr, th -->
+    <main>
+        <h1>Welcome to Tables</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Animal</th>
+                    <th>Average Mass [kg (lbs)]</th>
+                    <th>Maximum Mass [kb (lbs)]</th>
+                    <th>Flighted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ostrich</td>
+                    <td>104(230lbs)</td>
+                    <td>156.8 (346lbs)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Somoli Ostrich</td>
+                    <td>90(200lbs)</td>
+                    <td>130 (287lbs)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Wild Turkey</td>
+                    <td>13.5 (29.8lbs)</td>
+                    <td>39 (86lbs)</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>V2</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Animal</th>
+                    <th colspan="2">Average Mass</th>
+                    <th rowspan="2">Flighted</th>
+                    <tr>
+                        <th>kg</th>
+                        <th>lbs</th>
+                    </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ostrich</td>
+                    <td>104</td>
+                    <td>230lbs</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Somoli Ostrich</td>
+                    <td>90</td>
+                    <td>200lbs</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Wild Turkey</td>
+                    <td>13.5</td>
+                    <td>29.8lbs</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>
