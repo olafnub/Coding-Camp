@@ -877,17 +877,17 @@ window.onload = function () {
    // alert(false || false || true); // returns true
    // 1 - true , 0 - false
    // box office hours
-   let hour = 10;
-   let day = 'saturday';
-   let isWeekend = false;
-   if (day.startsWith('s')) {
-      isWeekend = true;
-   }
-   if (hour < 9 || hour > 17 || isWeekend) {
-      alert('box office is closed');
-   } else {
-      alert('Welcome!');
-   }
+   // let hour = 10;
+   // let day = 'saturday';
+   // let isWeekend = false;
+   // if (day.startsWith('s')) {
+   //    isWeekend = true;
+   // }
+   // if (hour < 9 || hour > 17 || isWeekend) {
+   //    alert('box office is closed');
+   // } else {
+   //    alert('Welcome!');
+   // }
 
 }
 
