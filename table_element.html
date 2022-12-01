@@ -7,6 +7,31 @@
     <title>Table Element</title>
 </head>
 <body>
+    <!-- Forms Demo - Like a shipping label and you recieve the data from the database -->
+    <h1>Form Dmeo</h1>
+    <form action="/tacos">
+        <input type="text">
+        <input type="password">
+        <input id="pickColor" type="color">
+        <input type="text">
+        <input type="text">
+    </form>
+
+    <p id="katy">DNA</p>
+<script>
+    let colorBackground = document.getElementById('pickColor');
+    let p = document.getElementById('katy');
+
+    colorBackground.addEventListener('change', changeColor);
+
+    function changeColor(event) {
+    p.style.color = event.target.value;
+    }
+</script>
+
+
+
+
  <!-- Working with td, tr, th -->
     <main>
         <h1>Welcome to Tables</h1>
