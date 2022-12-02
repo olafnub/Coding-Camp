@@ -9,24 +9,28 @@
 <body>
     <!-- Forms Demo - Like a shipping label and you recieve the data from the database -->
     <h1>Form Dmeo</h1>
-    
+<!-- http://127.0.0.1:5500/tacos?username=everything&password=is+gonna&color=%23c39292&number=231 -->
     <form action="/tacos">
+        <button type="button">PLEASE DO NOT SUBMIT</button>
         <p>
             <label for="username">Enter a Username</label>
-            <input id="username" type="text" placeholder="Username">
+            <input id="username" type="text" placeholder="Username" name="username">
         </p>
         <p>
             <label for="password">Enter a password</label>
-            <input id="password" type="password" placeholder="Enter passkey">
+            <input id="password" type="password" placeholder="Enter passkey" name="password">
         </p>
+        <button>MIDDLE</button>
         <p>
             <label for="pickColor">Choose a color</label>
-            <input id="pickColor" type="color">
+            <input id="pickColor" type="color" name="color">
         </p>
         <p>
             <label for="number">Enter a number</label>
-            <input type="number" placeholder="insert numbers" id="number">
+            <input type="number" placeholder="insert numbers" id="number" name="number">
         </p>
+        <button>Submit</button>
+        <input type="submit" value="Pokemon">
     </form>
 
     <p id="katy">DNA</p>
@@ -113,6 +117,38 @@
             </tbody>
         </table>
     </main>
+
+<!-- response from reddit https://www.reddit.com/search/?q=name.&include_over_18=1 -->
+    <form action="https://www.reddit.com/search/">
+        <h1>You are using Reddit's search engine</h1>
+        <p>
+            <label for="q">Enter your reddit search</label>
+            <input type="text" placeholder="search" name="q">
+            <button>Submit</button>
+        </p>
+       <!-- http://127.0.0.1:5500/reddit.com/search/?search=found+this -->
+        <!-- file:///reddit.com/search/?search=how+about+now -->
+        <!-- file:///reddit.com/search/?q=want+it -->
+        <!-- https://www.reddit.com/search/?q=wow -->
+    </form>
+
+    <form action="https://www.google.com/search">
+        <h1>Google Search</h1>
+            <p>
+                <label for="q">Enter your google search</label>
+                <input type="text" placeholder="search" name="q">
+                <button>Submit</button>
+            </p>
+    </form>
     
+    <form action="https://www.youtube.com/results">
+        <h1>Youtube Google</h1>
+        <p><label for="youtube">Your youtube Search</label>
+            <input type="text" name="search_query">
+            <button>Submit</button>
+        </p>
+    </form>
+
+    <!-- https://www.youtube.com/results?search_query=lofi -->
 </body>
 </html>
