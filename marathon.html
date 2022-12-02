@@ -31,19 +31,20 @@
 
         <div>
             <label for="email">Email</label>
-            <input type="mail" id="email" name="email">
+            <input type="mail" id="email" name="email" required>
 
             <label for="password">Password</label>
-            <input type="password" id="password">
+            <input type="password" id="password" required>
         </div>
 
         <div>
-            <label for="age">Select Age Group</label>
-            <select id="age" name="age">
-                <option selected>under 18</option>
-                <option name="18-30">18-30</option>
-                <option name="30-50">30-50</option>
-                <option name="50+">50+</option>
+            <label for="division">Select Age Group</label>
+            <select id="division" name="division">
+                <option value="kids" selected>under 18</option>
+                <option value="genZ">18-24</option>
+                <option value="millenial">24-37</option>
+                <option value="boomers+">37-50</option>
+                <option value="old_kidding">50+</option>
             </select>
         </div>
 
@@ -54,4 +55,8 @@
 </body>
 </html>
 
-<!-- Age group 18-30, 30-50, 50+ -->
+<!-- Form Returns -->
+<!-- smiley?firstname=Andy&lastname=Li&race=fun_run&email=wad%40gmai&age=genZ -->
+<!-- smiley?firstname=Andy&lastname=Li&race=fun_run&email=wad%40gmai&age=genZ -->
+<!-- smiley?firstname=Andy&lastname=Li&race=fun_run&email=wad%40gmai&age=genZ -->
+<!-- smiley?firstname=awdj&lastname=awdkj&race=full_run&email=awd%40gmail&division=kids-->
