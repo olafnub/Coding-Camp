@@ -122,8 +122,8 @@
     <form action="https://www.reddit.com/search/">
         <h1>You are using Reddit's search engine</h1>
         <p>
-            <label for="q">Enter your reddit search</label>
-            <input type="text" placeholder="search" name="q">
+            <label for="reddit">Enter your reddit search</label>
+            <input type="text" placeholder="search" name="q" id="reddit">
             <button>Submit</button>
         </p>
        <!-- http://127.0.0.1:5500/reddit.com/search/?search=found+this -->
@@ -135,8 +135,8 @@
     <form action="https://www.google.com/search">
         <h1>Google Search</h1>
             <p>
-                <label for="q">Enter your google search</label>
-                <input type="text" placeholder="search" name="q">
+                <label for="google">Enter your google search</label>
+                <input type="text" placeholder="search" name="q" id="google">
                 <button>Submit</button>
             </p>
     </form>
@@ -144,7 +144,7 @@
     <form action="https://www.youtube.com/results">
         <h1>Youtube Google</h1>
         <p><label for="youtube">Your youtube Search</label>
-            <input type="text" name="search_query">
+            <input type="text" placeholder="search" name="search_query" id="youtube">
             <button>Submit</button>
         </p>
     </form>
@@ -173,6 +173,11 @@
                 <option value="steak">steak</option>
             </select>
 
+        </p>
+
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" name="" id="cheese">
         </p>
         <button>Submit</button>
 
