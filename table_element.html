@@ -148,7 +148,36 @@
             <button>Submit</button>
         </p>
     </form>
-
     <!-- https://www.youtube.com/results?search_query=lofi -->
+    <h2>More Inputs!</h2>
+<!-- once checked and submitted, the website is switched to 'on' -->
+<!-- http://127.0.0.1:5500/noh.html?agree_tos=on -->
+    <form action="/noh.html">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="s_size">S:</label>
+            <input type="radio" name="size" id="s_size" value="S">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="M">
+            <label for="l">L</label>
+            <input type="radio" name="size" id="l" value="L">
+        </p>
+
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="">Please select an item</option>
+                <option value="fish">Fish</option>
+                <option value="veg">vegetarian</option>
+                <option value="steak">steak</option>
+            </select>
+
+        </p>
+        <button>Submit</button>
+
+
+    </form>
+
 </body>
 </html>
