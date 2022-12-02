@@ -172,13 +172,19 @@
                 <option value="veg">vegetarian</option>
                 <option value="steak">steak</option>
             </select>
-
         </p>
 
         <p>
             <label for="cheese">Amount of cheese</label>
-            <input type="range" name="" id="cheese">
+            <input type="range" name="cheese_level" id="cheese" min="1" max="10" step="2">
         </p>
+
+        <p>
+             <label for="">Any special requests?</label>
+             <br>
+             <textarea id="requests" name="Requests?" rows="10" cols="40" placeholder="type something in here"></textarea>
+         </p>
+
         <button>Submit</button>
 
 
