@@ -889,7 +889,7 @@ window.onload = function () {
    //    alert('Welcome!');
    // }
 
-   // Using if statements
+   // Using ||
    // if (1 || 0) {
    //    alert('worthy!');
    // }
@@ -903,7 +903,6 @@ window.onload = function () {
    // true || alert('no printed');
    // false || alert('printed');
 
-   
 }
 
 
