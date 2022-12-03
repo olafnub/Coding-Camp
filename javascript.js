@@ -902,6 +902,24 @@ window.onload = function () {
    // alert(firstName || lastName || nickname || 'Anonymous'); //Checks each for false and returns the last variable if all are false
    // true || alert('no printed');
    // false || alert('printed');
+   // alert(false || true) //will always reutrn true if it is in a ||
+
+   // Using &&
+   // alert(true && false); //returns false, will always return false with false in && statement
+   // alert(true && true); //returns true
+   // if(1 && 0) {
+   //    alert('This won\'t return');
+   // }
+   // alert(1 && 0); // returns the first false
+   // alert(null && 5);
+   // alert(1 && 5);
+   // alert(1 && 2 && null && 3); //returns null
+   // alert(1 && 2 && 3); returns the last expression 
+   // && is higher than ||
+   // alert(a && b || c && d) //basically (a&&b) || (c&&d)
+
+   // Using !
+   
 
 }
 
