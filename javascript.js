@@ -889,6 +889,21 @@ window.onload = function () {
    //    alert('Welcome!');
    // }
 
+   // Using if statements
+   // if (1 || 0) {
+   //    alert('worthy!');
+   // }
+   // alert(0 || 1 || 1);
+   // alert(undefined || null || 'bruh');
+   // alert('bruh' || undefined || null);
+   // let firstName = '';
+   // let lastName = '';
+   // let nickname = 'SuperCoder';
+   // alert(firstName || lastName || nickname || 'Anonymous'); //Checks each for false and returns the last variable if all are false
+   // true || alert('no printed');
+   // false || alert('printed');
+
+   
 }
 
 
