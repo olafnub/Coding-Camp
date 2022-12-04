@@ -940,7 +940,7 @@ window.onload = function () {
    // alert(null || 2 && 3 || 4); //returns 3 because && comes before || -> returns the first true which is 3 because && returns the last number which is 3
    // alert( 2 && 1 && 4); returns 4 because it's an and, it will return the last true because it looks for false
    // alert(2 || 3 || 4); //returns 2 because it's the first true
-   let myAge = 12;
+   // let myAge = 12;
    // if (myAge >= 14 && myAge <= 90) {
    //    alert('You are between 14 && 90');
    // }
@@ -965,6 +965,31 @@ window.onload = function () {
    // } else if(!(myAge>=14 && myAge <=90)) {
    //    alert('You are apart of GENP');
    // }
+   // if (0 || 0) alert('hi'); if (1 || 0) runs
+
+   // Check the login
+   let password = 'TheMaster';
+   let userInput = prompt('write your login');
+   if (userInput == 'Admin') {
+      let inputPassword = prompt('password');
+
+      if (inputPassword == password) {
+         alert('Welcome!');
+      } else if (inputPassword == '' || inputPassword == null) {
+         alert('Canceled')
+      } else {
+         alert('Wrong Password');
+      }
+   } else if (userInput == '' || userInput == null) {
+      alert('Canceled');
+   } else {
+      alert('I don\'t know you');
+   }
+
+   // Used to check what [Esc] Returns
+   //  let alertPrompt = prompt('Enter you name');
+   // alert(alertPrompt);
+
 
    
 
