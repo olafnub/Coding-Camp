@@ -918,7 +918,54 @@ window.onload = function () {
    // && is higher than ||
    // alert(a && b || c && d) //basically (a&&b) || (c&&d)
 
-   // Using !
+   // Using ! oppsosite basically/not. ! is the highest and will always goes before && ||
+   // alert(!true);
+   // alert(!0);
+   // alert(!!true); //undos the !, basically used to convert statements to booleans
+   // alert(!!'Not an empty string'); 
+   // alert(!!null);
+   // alert(Boolean('this is not a string'));
+   // alert(Boolean(null));
+
+   // Practice problems
+   // alert(null || true || 2); // returns true
+   // alert(Boolean(-1)); //0 is false, anything besides that is true
+   // alert(alert(1) || 2 || alert(3)) //returns 1 and 2
+   // alert(1 && null && 2); //returns null because it's the first false
+   // alert(alert(1) && alert(2)); //returns 1 and then undefined
+   // alert(alert(1) && false);
+   // alert(Boolean(alert(0)));
+   // alert(0 && 1);
+   // alert((alert(false) && false && 'hi')); //will always alert the first alert because it reads from left to right, then realize it's a false function and will alert an undefined
+   // alert(null || 2 && 3 || 4); //returns 3 because && comes before || -> returns the first true which is 3 because && returns the last number which is 3
+   // alert( 2 && 1 && 4); returns 4 because it's an and, it will return the last true because it looks for false
+   // alert(2 || 3 || 4); //returns 2 because it's the first true
+   let myAge = 12;
+   // if (myAge >= 14 && myAge <= 90) {
+   //    alert('You are between 14 && 90');
+   // }
+   // if (myAge <= 14 && myAge >=90) {
+   //    alert('You are younger than 14 && older than 90 using <= variant')
+   // } else {
+   //    alert('Hi');
+   // }
+   // if (!(myAge >= 14) && !(myAge <= 90)) {
+   //    alert('You are ! between 14 && 90 using ! variant');
+   // } else {
+   //    alert('Hi');
+   // }
+   // GENU = in between 14 and 90
+   // GENP = younger than 14 or older than 90
+   // if (myAge >= 14 && myAge <=90) {
+   //    alert('you are apart of GENU');
+   // } 
+   // // Same two ways of doing it
+   // else if(myAge < 14 || myAge > 90) {
+   //    alert('you are part of GENP');
+   // } else if(!(myAge>=14 && myAge <=90)) {
+   //    alert('You are apart of GENP');
+   // }
+
    
 
 }
