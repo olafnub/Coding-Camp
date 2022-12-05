@@ -1013,22 +1013,58 @@ window.onload = function () {
       }
    }
 
+   // Play
    // let cheddar = 'cheese';
    // if(cheddar) {
    //    alert('curious');
    // } else {
    //    alert('false curious');
    // }
-   // Test to see if strings are true or false
-   // if ('hi' && 0) {
-   //    alert("TRUE!");
-   // }
+         // Test to see if strings are true or false
+         // if ('hi' && 0) {
+         //    alert("TRUE!");
+         // }
    // let shoppingDone = false;
    // if (shoppingDone) {
    //    alert('Allowance = $50');
    // } else {
    //    alert('Allowance = $10');
    // }
+   // let loggedIn = true;
+   // let passcode = '123';
+   // let newMember = 'Welcome! To your First Day @ APPLE';
+   // if (passcode == '02MR_gkt' || loggedIn) {
+   //    alert('Welcome back');
+   // } else {
+   //    alert(newMember);
+   // }
+
+   // Introductory to switch , first time using switch , have used if else statements in java higihschool class
+   let getPhone = document.querySelector('#iphone');
+   let writePhone = document.querySelector('#phoneGen');
+
+   getPhone.addEventListener('change', changePhone);
+
+   function changePhone() {
+      const userPhone = getPhone.value;
+      switch (userPhone) {
+         case '1':
+            writePhone.textContent = 'You have the newest iphone';
+            break;
+         case '2':
+            writePhone.textContent = 'You have the second newest phone';
+            break;
+         case '3':
+            writePhone.textContent = 'You have the third gen phone';
+            break;
+         default: 
+            writePhone.textContent = '';
+      }
+   }
+   // Followed walkthrough given by MDN
+   
+   
+
 }
 
 
