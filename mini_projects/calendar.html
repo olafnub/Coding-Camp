@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
 </head>
 <body>
     <h1>Calendar - TOP</h1>
@@ -36,9 +37,9 @@
     let getMonth = document.querySelector('#month');
     let getBox = document.querySelector('#days');
 
-    function monthDays() {
+    let amountOfDays = 31;
+    getMonth.addEventListener('change', () => {
         let getMonthValue = getMonth.value;
-        let amountOfDays = 0;
         switch(getMonthValue) {
             case 'february':
                 amountOfDays = 29;
@@ -50,12 +51,11 @@
                 amountOfDays = 30;
                 break;
             default:
-                amountOfDays=31;
+                amountOfDays = 31;
+                break;
         }
         getBox.textContent = amountOfDays;
-    }
-    getMonth.addEventListener('change', monthDays);
-
+    });
 
 </script>
 </html>
