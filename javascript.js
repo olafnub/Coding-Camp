@@ -1063,7 +1063,13 @@ window.onload = function () {
    }
    // Followed walkthrough given by MDN
    
-   
+   // Ternary operator 
+   let isBirthday = true;
+   const greetingAndy = isBirthday
+   ?'Happy birthday Andy! - hope you have a good 20th birthday'
+   : 'Good morning Andy!'; //fun fact this exampple was given 5 minutes before my actual birthday
+   alert(greetingAndy);
+
 
 }
 
