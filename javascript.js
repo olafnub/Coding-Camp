@@ -985,30 +985,50 @@ window.onload = function () {
    // } else {
    //    alert('I don\'t know you');
    // }
-
-   // Used to check what [Esc] Returns
-   //  let alertPrompt = prompt('Enter you name');
-   // alert(alertPrompt);
+         // Used to check what [Esc] Returns
+         //  let alertPrompt = prompt('Enter you name');
+         // alert(alertPrompt);
 
    // Check weather
+   let temperature = 76;
    let weather = document.querySelector('select');
    let paraWeather = document.getElementById('clotheWear');
    weather.addEventListener('change', changeClothes);
-
    function changeClothes() {
       const weatherChoice = weather.value;
       if (weatherChoice === 'cold') {
          paraWeather.textContent = 'WINTER JACKET';
       } else if(weatherChoice ==='chilly') {
-         paraWeather.textContent = 'You can wear long sleeve'
+         paraWeather.textContent = 'You can wear long sleeve';
       } else if(weatherChoice ==='warm') {
-         paraWeather.textContent = 'You can wear short sleeve'
+         if (temperature <= 70) {
+            paraWeather.textContent = `It is ${temperature} outside, which is a billy chilly`;
+         } else if (temperature > 71) {
+         paraWeather.textContent = `You can wear short sleeve, ${temperature}`;
+      }
       } else if(weatherChoice ==='hot') {
-         paraWeather.textContent = 'T-SHIRTS'
+         paraWeather.textContent = 'T-SHIRTS';
       } else {
          paraWeather.textContent = '';
       }
    }
+
+   // let cheddar = 'cheese';
+   // if(cheddar) {
+   //    alert('curious');
+   // } else {
+   //    alert('false curious');
+   // }
+   // Test to see if strings are true or false
+   // if ('hi' && 0) {
+   //    alert("TRUE!");
+   // }
+   // let shoppingDone = false;
+   // if (shoppingDone) {
+   //    alert('Allowance = $50');
+   // } else {
+   //    alert('Allowance = $10');
+   // }
 }
 
 
