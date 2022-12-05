@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+</head>
+<body>
+    <h1>Calendar - TOP</h1>
+
+    <section>
+        <label for="month">Select your month</label>
+        <select id="month">
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">Septemebr</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+    </section>
+
+    <section>
+        <p id="days"></p>
+    </section>
+</body>
+
+<script>
+    let getMonth = document.querySelector('#month');
+    let getBox = document.querySelector('#days');
+
+    function monthDays() {
+        let getMonthValue = getMonth.value;
+        let amountOfDays = 0;
+        switch(getMonthValue) {
+            case 'february':
+                amountOfDays = 29;
+                break;
+            case 'april':
+            case 'june':
+            case 'september':
+            case 'november':
+                amountOfDays = 30;
+                break;
+            default:
+                amountOfDays=31;
+        }
+        getBox.textContent = amountOfDays;
+    }
+    getMonth.addEventListener('change', monthDays);
+
+
+</script>
+</html>
