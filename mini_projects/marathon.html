@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+<body>
+    
+    <h1>Race Regristration</h1>
+
+    <form action="/smiley">
+        <label for="first">First name</label>
+        <input type="text" id="first" name="firstname" required>
+        <label for="last">Last name</label>
+        <input type="text" id="last" name="lastname" required>
+
+        <p>Select a race: </p>
+<!-- smiley?firstname=Andy&lastname=Li&race=fun_run&email=googlhoogle%40gmail.com&age=30-50 -->
+        <div>
+            <!-- name="" should be the same if you want to only select one -->
+            <!-- value on the radio button is the information being sent -->
+           <input type="radio" id="five_k" name="race" value="fun_run">
+           <label for="five_k">Fun Run 5k</label> <br>
+           <input type="radio" id="half" name="race" value="half_run">
+           <label for="half">Half Marathon</label> <br>
+           <input type="radio" id="full" name="race" value="full_run"> 
+           <label for="full">Full marathon</label>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="mail" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+
+        <div>
+            <label for="division">Select Age Group</label>
+            <select id="division" name="division">
+                <option value="kids" selected>under 18</option>
+                <option value="genZ">18-24</option>
+                <option value="millenial">24-37</option>
+                <option value="boomers+">37-50</option>
+                <option value="old_kidding">50+</option>
+            </select>
+        </div>
+
+        <button>Register!</button>
+    </form>
+
+
+</body>
+</html>
+
+<!-- Form Returns -->
+<!-- smiley?firstname=Andy&lastname=Li&race=fun_run&email=wad%40gmai&age=genZ -->
+<!-- smiley?firstname=Andy&lastname=Li&race=fun_run&email=wad%40gmai&age=genZ -->
+<!-- smiley?firstname=Andy&lastname=Li&race=fun_run&email=wad%40gmai&age=genZ -->
+<!-- smiley?firstname=awdj&lastname=awdkj&race=full_run&email=awd%40gmail&division=kids-->
