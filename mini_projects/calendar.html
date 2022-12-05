@@ -28,17 +28,23 @@
         </select>
     </section>
 
-    <section>
+    <section class="date">
+        <h1 id="monthTitle"></h1>
         <p id="days"></p>
+    </section>
+    <section>
+        <ul id="boxDays"></ul>
     </section>
 </body>
 
 <script>
     let getMonth = document.querySelector('#month');
     let getBox = document.querySelector('#days');
-
-    let amountOfDays = 31;
+    let amountOfBoxes = document.getElementById('boxDays');
+    let getMonthTitle = document.getElementById('monthTitle');
+    
     getMonth.addEventListener('change', () => {
+        let amountOfDays = 31;
         let getMonthValue = getMonth.value;
         switch(getMonthValue) {
             case 'february':
@@ -55,7 +61,22 @@
                 break;
         }
         getBox.textContent = amountOfDays;
+        createCalendar(amountOfDays, getMonthValue)
+
     });
+
+    function createCalendar(amountOfDays, getMonthValue) {
+        amountOfBoxes.innerHTML = '';
+        getMonthTitle.innerHTML = getMonthValue;
+        for (let i = 1; i <= amountOfDays; i++) {
+            const listItem = document.createElement('li');
+            listItem.textContent = i;
+            amountOfBoxes.appendChild(listItem);
+        }
+    }
+
+    createCalendar(31, 'January');
+
 
 </script>
 </html>
