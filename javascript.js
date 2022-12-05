@@ -1064,12 +1064,24 @@ window.onload = function () {
    // Followed walkthrough given by MDN
    
    // Ternary operator 
-   let isBirthday = true;
-   const greetingAndy = isBirthday
-   ?'Happy birthday Andy! - hope you have a good 20th birthday'
-   : 'Good morning Andy!'; //fun fact this exampple was given 5 minutes before my actual birthday
-   alert(greetingAndy);
+   // let isBirthday = true;
+   // const greetingAndy = isBirthday
+   // ?'Happy birthday Andy! - hope you have a good 20th birthday'
+   // : 'Good morning Andy!'; //fun fact this exampple was given 5 minutes before my actual birthday
+   // alert(greetingAndy);
 
+   // Background color change white/black
+   let colorMode = document.querySelector('#theme');
+   let htmlDoc = document.querySelector('html');
+
+   function updateColor(bgColor, txtColor) {
+      htmlDoc.style.backgroundColor = bgColor;
+      htmlDoc.style.color = txtColor;
+   }
+   colorMode.addEventListener('change', () => colorMode.value === 'black'
+   ? updateColor('black', 'white')
+   : updateColor('white', 'black')
+   );
 
 }
 
