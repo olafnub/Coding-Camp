@@ -968,31 +968,47 @@ window.onload = function () {
    // if (0 || 0) alert('hi'); if (1 || 0) runs
 
    // Check the login
-   let password = 'TheMaster';
-   let userInput = prompt('write your login');
-   if (userInput == 'Admin') {
-      let inputPassword = prompt('password');
+   // let password = 'TheMaster';
+   // let userInput = prompt('write your login');
+   // if (userInput == 'Admin') {
+   //    let inputPassword = prompt('password');
 
-      if (inputPassword == password) {
-         alert('Welcome!');
-      } else if (inputPassword == '' || inputPassword == null) {
-         alert('Canceled')
-      } else {
-         alert('Wrong Password');
-      }
-   } else if (userInput == '' || userInput == null) {
-      alert('Canceled');
-   } else {
-      alert('I don\'t know you');
-   }
+   //    if (inputPassword == password) {
+   //       alert('Welcome!');
+   //    } else if (inputPassword == '' || inputPassword == null) {
+   //       alert('Canceled')
+   //    } else {
+   //       alert('Wrong Password');
+   //    }
+   // } else if (userInput == '' || userInput == null) {
+   //    alert('Canceled');
+   // } else {
+   //    alert('I don\'t know you');
+   // }
 
    // Used to check what [Esc] Returns
    //  let alertPrompt = prompt('Enter you name');
    // alert(alertPrompt);
 
+   // Check weather
+   let weather = document.querySelector('select');
+   let paraWeather = document.getElementById('clotheWear');
+   weather.addEventListener('change', changeClothes);
 
-   
-
+   function changeClothes() {
+      const weatherChoice = weather.value;
+      if (weatherChoice === 'cold') {
+         paraWeather.textContent = 'WINTER JACKET';
+      } else if(weatherChoice ==='chilly') {
+         paraWeather.textContent = 'You can wear long sleeve'
+      } else if(weatherChoice ==='warm') {
+         paraWeather.textContent = 'You can wear short sleeve'
+      } else if(weatherChoice ==='hot') {
+         paraWeather.textContent = 'T-SHIRTS'
+      } else {
+         paraWeather.textContent = '';
+      }
+   }
 }
 
 
