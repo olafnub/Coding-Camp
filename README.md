@@ -11,10 +11,7 @@ Line 970-991 || <a href="https://javascript.info/task/check-login">Check The Log
 <img width="500" alt="Picture of the practice problem's outline" src="https://user-images.githubusercontent.com/101077165/205476066-8f664f34-5e2b-41e6-a422-830a6a6c8139.png"> <br>
 
 Line 993-1011 || <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals">Select your Weather (MDN Walkthrough practice)</a> <br>
-<img width="500" alt="Select your Weather model" src="/images/SYC #1.png">
-
-<!-- 
-<img width="148" alt="Screen Shot 2022-12-04 at 6 58 43 PM" src="https://user-images.githubusercontent.com/101077165/205527797-5a4e57c9-066c-4baa-bee1-184f7db8efef.png">
-baa-042bb1dd4284.pn<img width="759" alt="Screen Shot 2022-12-04 at 6 58 48 PM" src="https://user-images.githubusercontent.com/101077165/205527804-5f2d9b87-f9c9-42bf-992b-6f16cbe81f39.png">
-g"> -->
+<img width="767" alt="Select your Weather demo with text and dropdown menu" src="https://user-images.githubusercontent.com/101077165/205529906-c91dacb6-5026-44ce-a9ec-d211d623e924.png">
+<img width="148" alt="Select your Weather demo #2 with selections of dropdown menu" src="https://user-images.githubusercontent.com/101077165/205529952-031f8fc4-653c-4cba-bcf1-8784b13035c8.png">
+<img width="759" alt="Select your Weather demo #3 with text after weather selected" src="https://user-images.githubusercontent.com/101077165/205529966-c6bbc90c-9252-47a6-aa82-4847bbab51fd.png">
 
