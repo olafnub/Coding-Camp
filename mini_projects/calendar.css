@@ -18,6 +18,12 @@ li{
 .date {
     display: flex;
 }
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
 .dot {
     background: linear-gradient( /* https://www.google.com/search?q=how+to+split+color+in+a+div+css&oq=how+to+split+color+in+a+div+css&aqs=chrome..69i57.4588j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_0piOY7G4BNHAytMPrJ-loAg_41 */
         to top,
