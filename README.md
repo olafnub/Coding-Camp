@@ -16,7 +16,8 @@ This website is used to test my code throughout the given recourses from bootcam
 <h2><a href='https://youtu.be/E6NO0rgFub4'>Source used to create a good README.md</a></h2>
 
 
-<hh2>Javascript.js practice problems</h2>
+<h2>Javascript.js practice problems</h2>
+Mini do it yourself problems from MDN <br>
 <strong><a href='https://javascript.info/task/check-login'>Check the Login</a></strong> || Line 970-991 <br>
 <img width="500" alt="Question explaining what to do for Check the login" src="https://user-images.githubusercontent.com/101077165/205476059-3a3b97b8-2018-473b-a9f5-1c173c52f0c7.png">
 <img width="500" alt="Picture of the practice problem's outline" src="https://user-images.githubusercontent.com/101077165/205476066-8f664f34-5e2b-41e6-a422-830a6a6c8139.png"> <br>
