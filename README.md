@@ -28,8 +28,8 @@ Mini do it yourself problems from MDN <br>
 <img width="759" alt="Select your Weather demo #3 with text after weather selected" src="https://user-images.githubusercontent.com/101077165/205529966-c6bbc90c-9252-47a6-aa82-4847bbab51fd.png">
 
 <h2>Easter Eggs</h2>
-<label for='birthday'>5 Minutes before my birthday and getting a problem that said happy birthday!</label><br>
-<img width="500" alt="a birthday problem 5 minutes before my birthday!" src="https://user-images.githubusercontent.com/101077165/206097315-afee3385-db9c-40d6-890d-5e900f1ad838.png" id='birthday'> <br>
+<label for="birthday">5 Minutes before my birthday and getting a problem that said happy birthday!(this screenshot shows 2 before)</label><br>
+<img width="500" alt="a birthday problem 5 minutes before my birthday! (this screenshot shows 2 before)" src="https://user-images.githubusercontent.com/101077165/206097315-afee3385-db9c-40d6-890d-5e900f1ad838.png" id="birthday"> <br>
 <label for='oneHundred'>100th Commit! <br></label>
-<img width="500" alt="100th Commit!" src="https://user-images.githubusercontent.com/101077165/206097530-c05f95cb-6479-402e-8725-e39a1c5fae26.png" id='oneHundred>
+<img width="500" alt="100th Commit!" src="https://user-images.githubusercontent.com/101077165/206097530-c05f95cb-6479-402e-8725-e39a1c5fae26.png" id="oneHundred">
 
