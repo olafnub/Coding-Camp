@@ -1083,7 +1083,13 @@ window.onload = function () {
    : updateColor('white', 'black')
    );
 
+   // Conditionals 1,2,3,4
+   // https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Test_your_skills:_Conditionals
+
+   // Finish conditional 1
+   // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206245386-868a3610-946b-4419-95d4-c550579499c9.png">
    
+
 }
 
 
