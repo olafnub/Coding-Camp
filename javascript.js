@@ -1090,6 +1090,10 @@ window.onload = function () {
    // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206245386-868a3610-946b-4419-95d4-c550579499c9.png">
    // Finish conditional 2
    // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206251557-facaf7cf-32ad-41a8-a868-8b5bc43389eb.png">
+   // Finish conditionals 3 -> Checked out the answer key to see how they did it. Was confused how to use && in cash switch
+   // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206256369-464af46e-7276-42d7-8c4b-a70b02f72134.png">
+   
+
 
 }
 
