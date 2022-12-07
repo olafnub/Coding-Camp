@@ -1088,7 +1088,8 @@ window.onload = function () {
 
    // Finish conditional 1
    // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206245386-868a3610-946b-4419-95d4-c550579499c9.png">
-   
+   // Finish conditional 2
+   // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206251557-facaf7cf-32ad-41a8-a868-8b5bc43389eb.png">
 
 }
 
