@@ -51,7 +51,7 @@
     let getBox = document.querySelector('#days');
     let amountOfBoxes = document.getElementById('boxDays');
     let getMonthTitle = document.getElementById('monthTitle');
-    
+
     getMonth.addEventListener('change', () => {
         let amountOfDays = 31;
         let getMonthValue = getMonth.value;
@@ -85,6 +85,24 @@
     }
 
     createCalendar(31, 'January');
+
+    
+    let getBackground = document.querySelector('#colorDot');
+    
+    getBackground.addEventListener('change', () => {
+
+    document.body.style.backgroundColor = getBackground.value;
+
+    const black_bg = (getBackground.value == 'black');
+    if (black_bg) {
+        document.body.style.color = 'white';
+        amountOfBoxes.style.backgroundColor = 'white';
+    } else {
+        document.body.style.color = 'black';
+        amountOfBoxes.style.backgroundColor = 'black';
+    }
+    // alert(getBackground.value);
+    });
 
 
 </script>
