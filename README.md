@@ -14,6 +14,8 @@ This website is used to test my code throughout the given recourses from bootcam
 *Mini projects are available in the <em>mini_projects</em> folder
 
 <h2><a href='https://youtu.be/E6NO0rgFub4'>Source used to create a good README.md</a></h2>
+<h2><a href="https://youtu.be/RGOj5yH7evk">Source used for git and github</a></h2>
+For cloning remote repository (not made on github first) on your computer. git init -> git add changed file -> git commit -m "first commit" -> git remote add origin ssh -> git remote -v to check all the repo that's connected to this file -> git push -u origin master the -u makes it your default push so in future you can just do git push.
 
 
 <h2>Javascript.js practice problems</h2>
