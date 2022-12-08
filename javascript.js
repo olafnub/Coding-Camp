@@ -1118,17 +1118,19 @@ window.onload = function () {
    //    alert('-1');
    // }
    // let result = (a+b < 4) ? result='below' : result='over';
-
-   let loginPass = prompt('pass');
-   let message = (loginPass == 'Employee') 
-   ? 'hello' 
-   : (loginPass == 'Director') 
-   ? 'Greetings'
-   : (loginPass == '') 
-   ? 'no login'
-   :  '';
-   alert(message);
+   // let loginPass = prompt('pass');
+   // let message = (loginPass == 'Employee') 
+   // ? 'hello' 
+   // : (loginPass == 'Director') 
+   // ? 'Greetings'
+   // : (loginPass == '') 
+   // ? 'no login'
+   // :  '';
+   // alert(message);
    
+   // Article from https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
+   const dateToday = new Date().getDay();
+   // alert(dateToday);
 }
 
 
