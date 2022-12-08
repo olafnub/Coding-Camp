@@ -1098,7 +1098,10 @@ window.onload = function () {
 
    let dhruvsBirthday = true;
    const replyThis = dhruvsBirthday ? 'Happy birthday Dhruv!': 'Happy day Dhruv!';
-   alert(replyThis);
+   // alert(replyThis);
+   if ('hi') {
+      alert('this');g
+   }
 
 }
 
