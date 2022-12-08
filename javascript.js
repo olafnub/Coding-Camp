@@ -1099,8 +1099,14 @@ window.onload = function () {
    let dhruvsBirthday = true;
    const replyThis = dhruvsBirthday ? 'Happy birthday Dhruv!': 'Happy day Dhruv!';
    // alert(replyThis);
-   if ('hi') {
-      alert('this');g
+   // if ('hi') {
+   //    alert('this');g
+   // }
+   const userReply = prompt('What is the “official” name of JavaScript?');
+   if (userReply == 'ECMAScript') {
+      alert('right!');
+   } else {
+      alert('You don\'t know? “ECMAScript”!')
    }
 
 }
