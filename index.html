@@ -1,184 +1,19 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<header>
-    <meta charset="UTF-8">
-    <title>Javascript</title>
-    <script src="javascript.js"></script>
-
-</header>
-<img src="images/SYC #1.png"
+    <header>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Practice</title>
+    </header>
 <body>
-    <nav>
-        <ul>
-            <li><a href="vocabulary.html">Vocabulary</a></li>
-        </ul>
-    </nav>
-    <main>
-    <button id="machineLearning">Start machine</button>
-    <p>This machine is stopped</p>
+    <ul>
+        <li><a href="javascript.html">Javascript</a></li>
+        <li><a href="mini_projects/calendar.html">Calendar</a></li>
+        <li><a href="mini_projects/marathon.html">Marathon</a></li>
+    </ul>
 
-    <button id="secondButton">Press me</button>
-
-    <p id="textCount"></p>
-    <p id="foodWord"></p>
-    <p id="companyName"></p>
-    <p id="catAndDog"></p>
-
-    <button id="intro">Introduction Button</button>
-    <p id="intro-p">Welcome to the new Generation of Programming!</p>
-
-    <p>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HELLO WORLD!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</p>
-    <p id="spacing"></p>
-
-    <p id="fruit"></p>
-    <p id="cup"></p>
-    <p id="journal"></p>
-    <p id="journal-title"></p>
-    <p id="1036Lyric"></p>
-    <p id="findWord"></p>
-    <br>
-    <h3>Don't Want It - Intro</h3>
-    <p id="lilNas"></p>
-    <p id="searchedWord"></p>
-    <form>
-        <h3>Welcome to your localeCompare numbering</h3>
-        <p>Type your words! numbers, words, letters, etc</p>
-        <input type="text" id="txt" placeholder="press enter once done"></input>
-        <button id='bttnAdd'>Add</button>
-        <!-- <button id="bttnRemove">Remove Last</button> -->
-    </form>
-    <button id='bttnFinish'>Finished</button>
-
-    <p id='userListWords'></p>
-
-
-    <!-- starts with & and ends with ; are for entity codes -->
-    <p>Out in atlanta<sub>&reg;</sub><sup>&trade;</sup></p>
-    <hr>
-    <section>
-    <p>drake &amp; drake &spades;</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non distinctio labore consequatur quam illum! Suscipit ad deleniti molestias quae ab ipsam voluptas 
-        illum. Ipsa, rem deleniti tenetur saepe voluptates corporis!</p>
-    </section>
-
-    <section>
-        <label for="weather">Select your weather</label>
-        <select id="weather">
-            <option value="">--Make your Choice--</option>
-            <option value="cold">Cold</option>
-            <option value="chilly">Chilly</option>
-            <option value="warm">Warm</option>
-            <option value="hot">Hot</option>
-        </select>
-        <p id="clotheWear"></p>
-    </section>
-
-    <section>
-        <label for="iphone">Select your phone</label>
-        <select id="iphone">
-            <option value="">--Select your phone--</option>
-            <option value="1">Iphone-1</option>
-            <option value="2">Iphone-2</option>
-            <option value="3">Iphone-3</option>
-        </select>
-        <p id="phoneGen"></p>
-        
-    </section>
-
-    <section>
-        <label for="theme">Color Mode</label>
-        <select id="theme">
-            <option value="white">white</option>
-            <option value="black">black</option>
-        </select>
-    </section>
-
-    <script>
-
-        const lyeStrong = document.getElementById("machineLearning");
-        const ttxt = document.querySelector("p");
-
-        lyeStrong.addEventListener("click", bbtnCreate);
-
-        function bbtnCreate() {
-            if (lyeStrong.textContent === "Start machine") {
-                lyeStrong.textContent = "Stop machine";
-                ttxt.textContent = "The machine is running";
-            } else {
-                lyeStrong.textContent = "Start machine";
-                ttxt.textContent = "The machine is stopped";
-            }
-        }
-        const molly = document.getElementById("secondButton");
-
-        function greetMe() {
-            const name = prompt("What is your name?");
-            alert(`Hello ${name}, nice to see you!`);
-        }
-
-        molly.addEventListener("click", greetMe);
-
-        // localeCompare Numbering
-        // https://youtu.be/NxVCq4p0Kb0
-
-
-        let arrayList = [];
-
-
-
-        const addTheArrays = (ev) => {
-            ev.preventDefault();
-
-            let userInput = document.getElementById('txt').value;
-
-            arrayList.push(userInput);
-            document.forms[0].reset();
-
-            alert(JSON.stringify(arrayList));
-
-        }
-
-        //   const removeArrays = (ep) => {
-        //     ep.preventDefault();
-        //     arrayList = arrayList.pop();
-        //     // alert(arrayList.pop());
-        //     alert("Removed Last Item: " + JSON.stringify(arrayList));
-        //     document.forms[0].reset();
-        //   }
-
-
-
-        const buttonAdd = document.getElementById('bttnAdd');
-        const buttonFinish = document.getElementById('bttnFinish');
-        function arraysPrint() {
-            let stringifyArrayList = JSON.stringify(arrayList);
-            let sortArrayList = arrayList.sort((a, b) => a.localeCompare(b));
-            document.getElementById('userListWords').innerHTML = "Sorted List: "
-            sortArrayList;
-
-        }
-        //   const buttonRemove = document.getElementById('bttnRemove');
-
-
-        buttonAdd.addEventListener('click', addTheArrays);
-        buttonFinish.addEventListener('click', arraysPrint);
-    // buttonRemove.addEventListener('click', removeArrays);
-    
-        
-
-// Happy thanksgiving
-
-    </script>
-    </main>
-    <footer style="background-color:beige">
-        <p>This is my javascript exercise website</p>
-        <ul>
-            <li><a href='https://www.linkedin.com/in/andy-li-65284220b/'>LinkedIn</a></li>
-        </ul>
-
-    </footer>
+    <h1>Welcome to this website for my coding practices</h1>
 </body>
-
 </html>
