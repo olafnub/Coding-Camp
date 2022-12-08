@@ -1109,15 +1109,16 @@ window.onload = function () {
    // } else {
    //    alert('You don\'t know? “ECMAScript”!')
    // }
+   // const userNumber = prompt('Type in a number');
+   // if (userNumber > 0) {
+   //    alert('1');
+   // } else if (userNumber == 0) {
+   //    alert('0');
+   // } else {
+   //    alert('-1');
+   // }
 
-   const userNumber = prompt('Type in a number');
-   if (userNumber > 0) {
-      alert('1');
-   } else if (userNumber == 0) {
-      alert('0');
-   } else {
-      alert('-1');
-   }
+   let result = (a+b < 4) ? result='below' : result='over';
 
 }
 
