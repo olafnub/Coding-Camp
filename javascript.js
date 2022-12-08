@@ -1092,8 +1092,9 @@ window.onload = function () {
    // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206251557-facaf7cf-32ad-41a8-a868-8b5bc43389eb.png">
    // Finish conditionals 3 -> Checked out the answer key to see how they did it. Was confused how to use && in cash switch
    // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206256369-464af46e-7276-42d7-8c4b-a70b02f72134.png">
-   
-
+   // Finish conditional 3
+   // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206362224-0d6d9730-1e03-4698-b1b2-24d501fec451.png">
+// The answer key https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/tasks/conditionals/marking.md
 
 }
 
