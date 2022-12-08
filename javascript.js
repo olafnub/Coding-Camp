@@ -1096,6 +1096,10 @@ window.onload = function () {
    // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206362224-0d6d9730-1e03-4698-b1b2-24d501fec451.png">
 // The answer key https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/tasks/conditionals/marking.md
 
+   let dhruvsBirthday = true;
+   const replyThis = dhruvsBirthday ? 'Happy birthday Dhruv!': 'Happy day Dhruv!';
+   alert(replyThis);
+
 }
 
 
