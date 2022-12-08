@@ -1096,17 +1096,27 @@ window.onload = function () {
    // <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206362224-0d6d9730-1e03-4698-b1b2-24d501fec451.png">
 // The answer key https://github.com/mdn/learning-area/blob/main/javascript/building-blocks/tasks/conditionals/marking.md
 
+// https://javascript.info/ifelse
    let dhruvsBirthday = true;
    const replyThis = dhruvsBirthday ? 'Happy birthday Dhruv!': 'Happy day Dhruv!';
    // alert(replyThis);
    // if ('hi') {
    //    alert('this');g
    // }
-   const userReply = prompt('What is the “official” name of JavaScript?');
-   if (userReply == 'ECMAScript') {
-      alert('right!');
+   // const userReply = prompt('What is the “official” name of JavaScript?');
+   // if (userReply == 'ECMAScript') {
+   //    alert('right!');
+   // } else {
+   //    alert('You don\'t know? “ECMAScript”!')
+   // }
+
+   const userNumber = prompt('Type in a number');
+   if (userNumber > 0) {
+      alert('1');
+   } else if (userNumber == 0) {
+      alert('0');
    } else {
-      alert('You don\'t know? “ECMAScript”!')
+      alert('-1');
    }
 
 }
