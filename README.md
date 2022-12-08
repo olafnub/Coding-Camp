@@ -5,7 +5,7 @@ Updates!
 12/05/22 - My Birthday!
 11/25/22 - Happy Thanksgiving!
 
-<h2> Welcome to my first github repos from The Odin Project! Hello Odin! </h2>
+<h2> Welcome to my first github repos from The Odin Project! Hello Odin!<em>original name: git_test</em></h2>
 
 This website is used to test my code throughout the given recourses from bootcamps / a testing haven: the recourses used include javascript.info, MDN, web3schools, & more -> Practice problems are done in this repository / also in website given coding space. Some tips to this website:
 
