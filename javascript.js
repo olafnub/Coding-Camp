@@ -1117,9 +1117,18 @@ window.onload = function () {
    // } else {
    //    alert('-1');
    // }
+   // let result = (a+b < 4) ? result='below' : result='over';
 
-   let result = (a+b < 4) ? result='below' : result='over';
-
+   let loginPass = prompt('pass');
+   let message = (loginPass == 'Employee') 
+   ? 'hello' 
+   : (loginPass == 'Director') 
+   ? 'Greetings'
+   : (loginPass == '') 
+   ? 'no login'
+   :  '';
+   alert(message);
+   
 }
 
 
