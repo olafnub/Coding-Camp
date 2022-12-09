@@ -12,9 +12,9 @@
         <label for="colorDot"><h1>Calendar - BG: Color</h1></label>
         <div class="dot">
             <select id="colorDot">
-                <option value="pink">Pink</option>
-                <option value="green">Green</option>
                 <option value="white">White</option>
+                <option value="green">Green</option>
+                <option value="pink">Pink</option>
                 <option value="black">Black</option>
             </select>
         </div>
@@ -78,7 +78,7 @@
         amountOfBoxes.innerHTML = '';
         getMonthTitle.innerHTML = getMonthValue;
         for (let i = 1; i <= amountOfDays; i++) {
-            const listItem = document.createElement('li');
+            let listItem = document.createElement('li');
             listItem.textContent = i;
             amountOfBoxes.appendChild(listItem);
         }
@@ -88,18 +88,19 @@
 
     
     let getBackground = document.querySelector('#colorDot');
+    let getList = document.getElementById('listItem');
     
     getBackground.addEventListener('change', () => {
 
     document.body.style.backgroundColor = getBackground.value;
-
-    const black_bg = (getBackground.value == 'black');
+    
+    let black_bg = (getBackground.value == 'black');
     if (black_bg) {
         document.body.style.color = 'white';
-        amountOfBoxes.style.backgroundColor = 'white';
+        getList.style.backgroundColor = 'white';
     } else {
         document.body.style.color = 'black';
-        amountOfBoxes.style.backgroundColor = 'black';
+        getList.style.backgroundColor = 'black';
     }
     // alert(getBackground.value);
     });
