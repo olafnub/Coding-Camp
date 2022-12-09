@@ -1141,32 +1141,36 @@ window.onload = function () {
    //       alert('B');
    //       break;
    // }
-   let month = new Date().getMonth();
+   // let month = new Date().getMonth();
    // month = 2;
    // alert(month); Alerts 11 for decemeber, 0 for january
-   switch (month) {
-      case 1:
-      case 2:
-      case 3:
-         alert('Winter');
-         break;
-      case 4:
-      case 5:
-      case 6:
-         alert('Spring');
-         break;
-      case 7:
-      case 8:
-      case 9:
-         alert('Summer');
-         break;
-      case 10:
-      case 11:
-         alert('Autumn');
-         break;
-      default: 
-         alert('not an existing month');
-   }
+   // switch (month) {
+   //    case 1:
+   //    case 2:
+   //    case 3:
+   //       alert('Winter');
+   //       break;
+   //    case 4:
+   //    case 5:
+   //    case 6:
+   //       alert('Spring');
+   //       break;
+   //    case 7:
+   //    case 8:
+   //    case 9:
+   //       alert('Summer');
+   //       break;
+   //    case 10:
+   //    case 11:
+   //       alert('Autumn');
+   //       break;
+   //    default: 
+   //       alert('not an existing month');
+   // }
+
+   // https://www.theodinproject.com/lessons/foundations-fundamentals-part-2
+   // Finish problem 1 <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206813077-e34648f8-fe39-4e46-8bea-65e72c01605c.png">
+   // 
 }
 
 
