@@ -1129,8 +1129,44 @@ window.onload = function () {
    // alert(message);
    
    // Article from https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
-   const dateToday = new Date().getDay();
+   // const dateToday = new Date().getDay();
    // alert(dateToday);
+   // Grade problem
+   // const grade = 91;
+   // switch (true) {
+   //    case grade>90:
+   //       alert('A');
+   //       break;
+   //    case grade>80:
+   //       alert('B');
+   //       break;
+   // }
+   let month = new Date().getMonth();
+   // month = 2;
+   // alert(month); Alerts 11 for decemeber, 0 for january
+   switch (month) {
+      case 1:
+      case 2:
+      case 3:
+         alert('Winter');
+         break;
+      case 4:
+      case 5:
+      case 6:
+         alert('Spring');
+         break;
+      case 7:
+      case 8:
+      case 9:
+         alert('Summer');
+         break;
+      case 10:
+      case 11:
+         alert('Autumn');
+         break;
+      default: 
+         alert('not an existing month');
+   }
 }
 
 
