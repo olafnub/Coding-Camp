@@ -86,9 +86,10 @@
 
     createCalendar(31, 'January');
 
-    
+    // background color change
+
     let getBackground = document.querySelector('#colorDot');
-    let getList = document.getElementById('listItem');
+    let grabListLength = document.querySelectorAll("li").length;
     
     getBackground.addEventListener('change', () => {
 
@@ -97,13 +98,19 @@
     let black_bg = (getBackground.value == 'black');
     if (black_bg) {
         document.body.style.color = 'white';
-        getList.style.backgroundColor = 'white';
+        changeColor('#081b4b');
     } else {
         document.body.style.color = 'black';
-        getList.style.backgroundColor = 'black';
+        changeColor('black');
     }
-    // alert(getBackground.value);
     });
+
+    function changeColor(listColor) {
+    for (let i = 0; i < grabListLength; i++) {
+        let grabLi = document.querySelectorAll("li")[i];
+        grabLi.style.backgroundColor = listColor;
+        }
+    }
 
 
 </script>
