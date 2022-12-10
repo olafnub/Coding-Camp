@@ -1169,10 +1169,10 @@ window.onload = function () {
    // }
 
    // https://www.theodinproject.com/lessons/foundations-fundamentals-part-2
-   // Finish problem 1 <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206813077-e34648f8-fe39-4e46-8bea-65e72c01605c.png">
-   // Finish exercse 2
-   // Finish exercise 3 - learning the use of operators
-   // Finish exercise 4 - Create greetings with different variables
+   // Finish problem 1 <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206813077-e34648f8-fe39-4e46-8bea-65e72c01605c.png"> - https://replit.com/@AndyL5/troubleshooting-exercise-1#troubleshooting.js
+   // Finish exercse 2 - https://replit.com/@AndyL5/enter-a-number-TOP-2-javascript-Problem#script.js
+   // Finish exercise 3 - learning the use of operators - https://replit.com/@AndyL5/lets-do-some-math-TOP-3-Javascript#math.js
+   // Finish exercise 4 - Create greetings with different variables - https://replit.com/@AndyL5/direction-follow-TOP-4-Javascript#follow.js
 }
 
 
