@@ -1172,6 +1172,7 @@ window.onload = function () {
    // Finish problem 1 <img width="500" alt="image" src="https://user-images.githubusercontent.com/101077165/206813077-e34648f8-fe39-4e46-8bea-65e72c01605c.png">
    // Finish exercse 2
    // Finish exercise 3 - learning the use of operators
+   // Finish exercise 4 - Create greetings with different variables
 }
 
 
