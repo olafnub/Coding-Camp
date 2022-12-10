@@ -1173,7 +1173,13 @@ window.onload = function () {
    // Finish exercse 2 - https://replit.com/@AndyL5/enter-a-number-TOP-2-javascript-Problem#script.js
    // Finish exercise 3 - learning the use of operators - https://replit.com/@AndyL5/lets-do-some-math-TOP-3-Javascript#math.js
    // Finish exercise 4 - Create greetings with different variables - https://replit.com/@AndyL5/direction-follow-TOP-4-Javascript#follow.js
+
+   // How to build websites faster with devtools
+   // watch https://youtu.be/VYyQv0CSZOE (got halfway through it)
+
+
 }
+
 
 
 
