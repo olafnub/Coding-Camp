@@ -4,3 +4,10 @@
 // document.getElementById("run-time").innerHTML = returnRunTime;
 // }
 // alert(addingRunTime);
+
+// Learn breakpoints https://developer.chrome.com/docs/devtools/javascript/breakpoints/
+// console.log('a');
+// console.log('b');
+// debugger;
+// console.log('c');
+// Read https://developer.chrome.com/docs/devtools/dom/#scroll2
