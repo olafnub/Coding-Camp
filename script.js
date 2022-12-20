@@ -13,3 +13,4 @@
 // Read https://developer.chrome.com/docs/devtools/dom/#scroll2
 // Go through https://developer.chrome.com/docs/devtools/css/grid/
 // Go through the use of badges https://developer.chrome.com/docs/devtools/elements/badges/
+// Go through spotting inactive CSS https://developer.chrome.com/docs/devtools/css/issues/
