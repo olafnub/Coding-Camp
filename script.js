@@ -15,3 +15,4 @@
 // Go through the use of badges https://developer.chrome.com/docs/devtools/elements/badges/
 // Go through spotting inactive CSS https://developer.chrome.com/docs/devtools/css/issues/
 // Walk through using Devtools for flexbox https://developer.chrome.com/docs/devtools/css/flexbox/
+// Go through resizing container with devtools https://developer.chrome.com/docs/devtools/css/container-queries/
