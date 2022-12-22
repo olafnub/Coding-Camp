@@ -17,3 +17,28 @@
 // Walk through using Devtools for flexbox https://developer.chrome.com/docs/devtools/css/flexbox/
 // Go through resizing container with devtools https://developer.chrome.com/docs/devtools/css/container-queries/
 // Skim through CSS devtools reference https://developer.chrome.com/docs/devtools/css/reference/
+
+// Overview of the use of Console https://developer.chrome.com/docs/devtools/console/
+// let clickCount = 0;
+// $("#button-variables-number").addEventListener("click", () => {
+//     console.log(`I was pressed ${++clickCount} times by now`);
+// }); Doesn't work
+// const coWorkers = [
+//     {
+//         name: 'daryl',
+//         age: 23
+//     },
+//     {
+//         name: 'linda',
+//         age: 31
+//     },
+//     {
+//         name: 'anthony',
+//         age: 25
+//     }
+// ]
+// setTimeout(() => { //setTimeout != setTimeOut
+// console.table(coWorkers);
+//   }, 3000);
+// console.assert(document.getElementById("variables-number"), 'variables-number not found!');
+
