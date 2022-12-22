@@ -16,3 +16,4 @@
 // Go through spotting inactive CSS https://developer.chrome.com/docs/devtools/css/issues/
 // Walk through using Devtools for flexbox https://developer.chrome.com/docs/devtools/css/flexbox/
 // Go through resizing container with devtools https://developer.chrome.com/docs/devtools/css/container-queries/
+// Skim through CSS devtools reference https://developer.chrome.com/docs/devtools/css/reference/
