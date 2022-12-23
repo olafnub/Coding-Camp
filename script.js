@@ -42,3 +42,11 @@
 //   }, 3000);
 // console.assert(document.getElementById("variables-number"), 'variables-number not found!');
 
+const labelGroupName = 'SuperHero';
+console.group(labelGroupName);
+console.info('Iron Man');
+console.info('Spider Man');
+console.info('Captain America');
+console.groupEnd(labelGroupName);
+console.info('Thor');
+
