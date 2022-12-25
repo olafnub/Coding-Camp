@@ -50,3 +50,5 @@
 // console.info('Thor');
 // Go through https://developer.chrome.com/docs/devtools/console/log/
 // Walk through https://developer.chrome.com/docs/devtools/javascript/
+// Walk through https://developer.chrome.com/docs/devtools/console/javascript/
+// $() used for document.querySelector() inspired by jQuery but not actually jQuery
