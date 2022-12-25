@@ -55,3 +55,23 @@
 // Learn live expressions https://developer.chrome.com/docs/devtools/console/live-expressions/
 // Introduction to color display text in console https://developer.chrome.com/docs/devtools/console/format-style/
 // Quickly scroll through console reference https://developer.chrome.com/docs/devtools/console/reference/
+window.onload = () => {
+let timer = document.getElementById('timer');
+
+function startTimer() {
+
+    if (timer.innerHTML == 'Start timer') {
+    console.time();
+    timer.innerHTML = 'Stop timer';
+}
+    
+    else if (timer.innerHTML == 'Stop timer') {
+        console.timeEnd();
+        timer.innerHTML = 'Start timer';
+    }
+}
+
+timer.addEventListener('click', startTimer);
+
+
+}
