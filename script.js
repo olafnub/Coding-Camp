@@ -53,3 +53,5 @@
 // Walk through https://developer.chrome.com/docs/devtools/console/javascript/
 // $() used for document.querySelector() inspired by jQuery but not actually jQuery
 // Learn live expressions https://developer.chrome.com/docs/devtools/console/live-expressions/
+// Introduction to color display text in console https://developer.chrome.com/docs/devtools/console/format-style/
+
