@@ -52,3 +52,4 @@
 // Walk through https://developer.chrome.com/docs/devtools/javascript/
 // Walk through https://developer.chrome.com/docs/devtools/console/javascript/
 // $() used for document.querySelector() inspired by jQuery but not actually jQuery
+// Learn live expressions https://developer.chrome.com/docs/devtools/console/live-expressions/
