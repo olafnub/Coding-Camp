@@ -57,27 +57,26 @@
 // Quickly scroll through console reference https://developer.chrome.com/docs/devtools/console/reference/
 window.onload = () => {
 let timer = document.getElementById('timer');
+let before;
+let after;
 
 function startTimer() {
-
     if (timer.innerHTML == 'Start timer') {
-    console.time();
-    timer.innerHTML = 'Stop timer';
-}
+        console.log('Starting timer');
+        before = Date.now();
+        timer.innerHTML = 'Stop timer';
+    }
     
     else if (timer.innerHTML == 'Stop timer') {
-        console.timeEnd();
+        console.log('Stopping timer');
+        after = Date.now();
+        console.log('Time ran = ' + (after-before) / 1000 + ' seconds');
         timer.innerHTML = 'Start timer';
     }
+
+
 }
 
 timer.addEventListener('click', startTimer);
 
 }
-
-console.log('Starting timer');
-
-const before = Date.now();
-const after = Date.now();
-
-console.log( (after-before) / 1000);
