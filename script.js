@@ -73,5 +73,11 @@ function startTimer() {
 
 timer.addEventListener('click', startTimer);
 
-
 }
+
+console.log('Starting timer');
+
+const before = Date.now();
+const after = Date.now();
+
+console.log( (after-before) / 1000);
