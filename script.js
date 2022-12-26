@@ -82,3 +82,5 @@ timer.addEventListener('click', startTimer);
 } // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
+// Save code in devtools work space https://developer.chrome.com/docs/devtools/workspaces/
+
