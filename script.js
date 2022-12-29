@@ -84,4 +84,5 @@ timer.addEventListener('click', startTimer);
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
 // Save code in devtools work space https://developer.chrome.com/docs/devtools/workspaces/
 // Create run and save snippets https://developer.chrome.com/docs/devtools/sources/
-// Create and run snippets https://developer.chrome.com/docs/devtools/javascript/snippets/
+// Create and run snippets https://developer.chrome.com/docs/devtools/javascript/snippets/gg
+// Walk and skim through javascript devtools https://developer.chrome.com/docs/devtools/javascript/reference/
