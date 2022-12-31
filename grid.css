@@ -1,0 +1,8 @@
+.gridBox img {
+    width: 300px;
+}
+.gridBox {
+    display: grid;
+    border: 1px solid green;
+    grid-template-columns: 300px 50px 100px;
+}
