@@ -79,6 +79,29 @@ function startTimer() {
 
 timer.addEventListener('click', startTimer);
 
+
+
+let changeButton = document.getElementById('changeButton');
+let changePara = document.getElementById('changePara');
+changeButton.addEventListener('click', changeFunction);
+
+function changeFunction() {
+    // let listOfWords = {
+    //     header: 'What I like',
+    //     paragraph: 'Juma',
+    // }
+    let arrayOfLikes = ['Juma', 'Coding', 'Learning', 'Finance'];
+
+    for (let i = 0; i < arrayOfLikes.length; i++) {
+        for (let k = 0; k < arrayOfLikes.length; k++) {
+            if (changePara.innerHTML == arrayOfLikes[i]) {
+                changePara.innerHTML = arrayOfLikes[k]
+            } else {
+                changePara.innerHTML = arrayOfLikes[Math.floor(Math.random() * arrayOfLikes.length)];
+            }
+        }
+    }
+}
 } // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
