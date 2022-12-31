@@ -110,3 +110,4 @@ function changeFunction() {
 // Create and run snippets https://developer.chrome.com/docs/devtools/javascript/snippets/gg
 // Walk and skim through javascript devtools https://developer.chrome.com/docs/devtools/javascript/reference/
 // Walk through and go through devtools Network https://developer.chrome.com/docs/devtools/network/
+// Skim through Network references https://developer.chrome.com/docs/devtools/network/reference/
