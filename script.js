@@ -61,12 +61,56 @@ function switchDate() {
     
 }
 
+// Current time
+let hours = today.getHours();
+let minutes = String(today.getMinutes()).padStart(2, "0");
+let postMeridiem; // Check for Am/Pm
+let time; //for windowonload
+let currentTime; //added together
+let currentSeconds = today.getSeconds();
+
+if (hours >= 0 && hours < 12) { 
+    postMeridiem = 'a.m.'
+} else {
+    postMeridiem = 'p.m.'
+}
+currentTime = hours + ":" + minutes + " " + postMeridiem;
+
+// Change current hour to 0-12
+switch (hours) {
+    case "13":
+        hours = 1;
+        break;
+    case "14":
+        hours = 2;
+        break;
+    case "15":
+        hours = 3;
+        break;
+    case "16":
+        hours = 4;
+        break;
+}
+
+// Building the clock minute update
+setInterval(changeMinutes, 1000);
+function changeMinutes() {
+    let today = new Date();
+    let currentSeconds = today.getSeconds();
+    if (currentSeconds == 0 ) {
+        let minutes = String(today.getMinutes()).padStart(2, "0");
+        currentTime = hours + ":" + minutes + " " + postMeridiem;
+        time.innerHTML = currentTime;
+    }
+}
+
 window.onload = () => {
     // Give format date month/date/year
     date = document.getElementById("todaysDate");
     date.addEventListener("click", switchDate);
     date.innerHTML = formatNumberDate;
 
-    // Give format for time
+    time = document.getElementById("time");
+    time.innerHTML = currentTime;
 
 }
