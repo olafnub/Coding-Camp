@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Testing</title>
+    <script src="random.js"></script>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        main {
+            display: grid;
+            justify-items: center;
+        }
+        .box {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: [left] 1fr [middle1] 1fr [middle2] 1fr [right];
+            border: 2px solid;
+            padding: 4px;
+            width: 300px;
+            background-color: cadetblue;
+        }
+        .box div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            color: black;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .grapes {
+            background-color: purple;
+        }
+        .apple {
+            background-color: red;
+        }
+        .banana {
+            background-color: yellow;
+            grid-column: left/right;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="timer">Start timer</button>
+    
+    <main>
+        <p>Fruit Box</p>
+        <div class="box">
+            <div class="orange">Orange</div>
+            <div class="grapes">Grapes</div>
+            <div class="apple">Apple</div>
+            <div class="banana">Banana</div>
+        </div>
+    </main>
+
+    <div class="gridBox">
+        <img id="100th" src="images/100th Commit!.png">
+        <img id="howTo" src="images/how to get each li.png">
+        <img src="images/FLEXBOX 2 Screen Shot 2022-10-02 at 6.31.22 PM.png">
+    </div>
+
+    <div class="textBox">
+        <div class="headerBox">
+            <h4 id="changeHeader">What I like: </h4>
+            <button id="changeButton">hi</button>
+        </div>
+        <p id="changePara">Juma</p>
+    </div>
+</body>
+</html>
