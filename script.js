@@ -129,13 +129,30 @@ function changeMinutes() {
     }
 }
 
+// Random color generator
+let colorList = ["palevioletred", "azure", "aliceblue", "antiquewhite", "aquamarine", "cadetblue", "burlywood", "chocolate", "coral", "cornflowerblue"]
+let randomNumber = Math.floor(Math.random() * colorList.length);
+
+function changeColor() { //Change color of background
+    if (document.body.style.backgroundColor != colorList[randomNumber]) {
+        document.body.style.backgroundColor = colorList[randomNumber];
+    } else {
+        document.body.style.backgroundColor = "white";
+    }
+    
+}
 window.onload = () => {
     // Give format date month/date/year
     date = document.getElementById("todaysDate");
     date.addEventListener("click", switchDate);
     date.innerHTML = formatNumberDate;
 
+    // Time clock
     time = document.getElementById("time");
     time.innerHTML = currentTime;
 
+    // Random Color
+    randomColor = document.getElementById("randomColor");
+    randomColor.innerHTML = colorList[randomNumber];
+    randomColor.addEventListener('click', changeColor);
 }
