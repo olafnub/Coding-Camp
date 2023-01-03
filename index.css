@@ -20,6 +20,30 @@
     display: flex;
     gap: 10px;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     /* border: 1px solid green; */
+}
+
+.right-nav {
+    border: 1px solid blue;
+    padding: 5px;
+}
+.right-nav:hover {
+    cursor: cell;
+}
+#time {
+    cursor: auto;
+}
+
+#javascriptCode {
+    background: transparent;
+}
+
+#javascriptCode:hover {
+    background: gainsboro;
+}
+.headerThree {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
 }
