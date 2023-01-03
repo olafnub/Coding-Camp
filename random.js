@@ -113,3 +113,4 @@ function changeFunction() {
 // Skim through Network references https://developer.chrome.com/docs/devtools/network/reference/
 // Go through resrouces for devtools https://developer.chrome.com/docs/devtools/resources/
 // Go through performances on devtools https://developer.chrome.com/docs/devtools/evaluate-performance/
+// Skim through performance features reference https://developer.chrome.com/docs/devtools/evaluate-performance/reference/
