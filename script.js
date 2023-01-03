@@ -77,40 +77,40 @@ if (hours >= 0 && hours < 12) {
 
 // Change current hour to 0-12
 switch (hours) {
-    case "13":
+    case 13:
         hours = "1";
         break;
-    case "14":
+    case 14:
         hours = "2";
         break;
-    case "15":
+    case 15:
         hours = "3";
         break;
-    case "16":
+    case 16:
         hours = "4";
         break;
-    case "17":
+    case 17:
         hours = "5";
         break;
-    case "18":
+    case 18:
         hours = "6";
         break;
-    case "19":
+    case 19:
         hours = "7";
         break;
-    case "20":
+    case 20:
         hours = "8";
         break;
-    case "21":
+    case 21:
         hours = "9";
         break;
-    case "22":
+    case 22:
         hours = "10";
         break;
-    case "23":
+    case 23:
         hours = "11";
         break;
-    case "0":
+    case 0:
         hours = "12";
         break;
 }
