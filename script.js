@@ -130,14 +130,14 @@ function changeMinutes() {
 }
 
 // Random color generator
-let colorList = ["palevioletred", "azure", "aliceblue", "antiquewhite", "aquamarine", "cadetblue", "burlywood", "chocolate", "coral", "cornflowerblue"]
+let colorList = ["palevioletred", "cadetblue", "chocolate", "coral", "cornflowerblue"]
 let randomNumber = Math.floor(Math.random() * colorList.length);
 
 function changeColor() { //Change color of background
     if (document.body.style.backgroundColor != colorList[randomNumber]) {
         document.body.style.backgroundColor = colorList[randomNumber];
     } else {
-        document.body.style.backgroundColor = "white";
+        document.body.style.backgroundColor = "#33475B";
     }
     
 }
