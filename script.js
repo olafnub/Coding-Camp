@@ -61,22 +61,30 @@ function switchDate() {
     
 }
 
-// Current time
+// Building the clock minute update
+// Add them all together
+let currentTime;
+// Check for Am/Pm
 let hours = today.getHours();
-let minutes = String(today.getMinutes()).padStart(2, "0");
-let postMeridiem; // Check for Am/Pm
-let time; //for windowonload
-let currentTime; //added together
-let currentSeconds = today.getSeconds();
-
+let postMeridiem;
 if (hours >= 0 && hours < 12) { 
     postMeridiem = 'a.m.'
 } else {
     postMeridiem = 'p.m.'
 }
 
-// Change current hour to 0-12
-switch (hours) {
+// Get hours
+setInterval(changeHour, 1000);
+function changeHour() {
+    let updateToday = new Date.now();
+    let getMinutes = updateToday.getMinutes();
+
+    if (getMinutes == 0) {
+        hours = updateToday.getHours();
+    }
+}
+ // Change current hour to 0-12
+ switch (hours) {
     case 13:
         hours = "1";
         break;
@@ -115,19 +123,19 @@ switch (hours) {
         break;
 }
 
-currentTime = hours + ":" + minutes + " " + postMeridiem;
+// Get minutes
+setInterval(changeMinute, 1000);
+let minutes = today.getMinutes();
+function changeMinute() {
+    let updateToday = new Date.now();
+    let getSeconds = updateToday.getSeconds();
 
-// Building the clock minute update
-setInterval(changeMinutes, 1000);
-function changeMinutes() {
-    let today = new Date();
-    let currentSeconds = today.getSeconds();
-    if (currentSeconds == 0 ) {
-        let minutes = String(today.getMinutes()).padStart(2, "0");
-        currentTime = hours + ":" + minutes + " " + postMeridiem;
-        time.innerHTML = currentTime;
+    if (getSeconds == 0) {
+        minutes = updateToday.getMinutes();
     }
 }
+
+currentTime = hours + ":" + minutes + " " + postMeridiem;
 
 // Random color generator
 let colorList = ["palevioletred", "cadetblue", "chocolate", "coral", "cornflowerblue"]
