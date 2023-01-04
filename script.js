@@ -64,6 +64,8 @@ function switchDate() {
 // Building the clock minute update
 // Add them all together
 let currentTime;
+let getSeconds = today.getSeconds();
+
 // Check for Am/Pm
 let hours = today.getHours();
 let postMeridiem;
@@ -76,11 +78,12 @@ if (hours >= 0 && hours < 12) {
 // Get hours
 setInterval(changeHour, 1000);
 function changeHour() {
-    let updateToday = new Date.now();
+    let updateToday = new Date();
     let getMinutes = updateToday.getMinutes();
 
     if (getMinutes == 0) {
         hours = updateToday.getHours();
+        changeClock();
     }
 }
  // Change current hour to 0-12
@@ -127,15 +130,19 @@ function changeHour() {
 setInterval(changeMinute, 1000);
 let minutes = today.getMinutes();
 function changeMinute() {
-    let updateToday = new Date.now();
+    let updateToday = new Date();
     let getSeconds = updateToday.getSeconds();
 
     if (getSeconds == 0) {
         minutes = updateToday.getMinutes();
+        changeClock();
     }
 }
 
-currentTime = hours + ":" + minutes + " " + postMeridiem;
+function changeClock() {
+    currentTime = hours + ":" + minutes + " " + postMeridiem;
+    time.innerHTML = currentTime;
+    }
 
 // Random color generator
 let colorList = ["palevioletred", "cadetblue", "chocolate", "coral", "cornflowerblue"]
@@ -272,7 +279,9 @@ window.onload = () => {
     date.innerHTML = formatNumberDate;
 
     // Time clock
-    time = document.getElementById("time");
+    
+    time = document.getElementById("time"); 
+    currentTime = hours + ":" + minutes + " " + postMeridiem;   
     time.innerHTML = currentTime;
 
     // Random Color
