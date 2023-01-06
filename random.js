@@ -238,3 +238,4 @@ console.log(startEnd());
 // Go through performances on devtools https://developer.chrome.com/docs/devtools/evaluate-performance/
 // Skim through performance features reference https://developer.chrome.com/docs/devtools/evaluate-performance/reference/
 // Use the coverage tab https://developer.chrome.com/docs/devtools/coverage/
+// Elminate render blocking resources https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/
