@@ -142,6 +142,28 @@ function setJavascript() {
     })
 }
 
+function mapClass() {
+    let map = new Map();
+
+    map.set("Andy", "Javascript");
+    map.set("Kiran", "ML");
+    map.set("Alvin", "Blockchain");
+    map.set("Andy", "AI"); //Because we have .set (javascript gets replaced with AI )
+
+    // console.log(map.keys()); //returns 'Andy', 'Kiran', 'Alvin'
+    // console.log(map.get("Andy")); //Returns "Javascript"
+    // console.log(map.has("Andy")) //Returns true -> checks to see if Andy is there
+
+    for (let [k,v] of map) { //v = value, k = key
+        console.log(k, " : ", v);
+    }
+
+    // If to map by forEach, v comes first because value is first instead of key
+    // map.forEach((v, k) => {
+    //     console.log(k, " : ", v);
+    // });
+}
+
 function returnEnd() {
     // See if function startEnd() {var end = 10} console.log(end) would return 10 - Answer is false
     var start = 1;
