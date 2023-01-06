@@ -124,6 +124,24 @@ function filterMapReduce() {
     console.log(results);
 }
 
+function setJavascript() {
+    // Learn about Set in javascript https://youtu.be/YiIKUhtqeRM
+    // let nums = new Set("bookkeeper"); //Prints each letter only once
+    let nums = new Set();
+
+    nums.add(3);
+    nums.add(2);
+    nums.add(3);
+    nums.add("3");
+    nums.add("hey");
+
+    console.log(nums.has(3)); // Has checks if there is the number 3
+
+    nums.forEach(value => {
+        console.log(value);
+    })
+}
+
 function returnEnd() {
     // See if function startEnd() {var end = 10} console.log(end) would return 10 - Answer is false
     var start = 1;
