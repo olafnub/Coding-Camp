@@ -175,7 +175,41 @@ function recursionScript() {
     }
     show();
 }
-recursionScript();
+
+function myFactorialRecursion() {
+    let num = 10;
+    let set = new Set();
+
+    function show() {
+        console.log(num);
+        set.add(num);
+        num--;
+        if (num > 0) {
+            show();
+        }
+    }
+    show();
+    let sum = 1;
+    set.forEach(x => {
+        sum *= x;
+    });
+    console.log(sum);
+}
+
+function factorialRecursion() {
+    // Learn how to make a factorial recursion https://youtu.be/rDjSD1vcsRI
+    function show(n) {
+        if (n == 0) {
+            return 1
+        } else {
+            return n * show(n-1);
+        }
+    }
+    let num = 5;
+    let result = show(num);
+    console.log(result);
+}
+
 
 
 function returnEnd() {
@@ -189,7 +223,9 @@ function returnEnd() {
 console.log(startEnd());
 }
 
-} // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
+} 
+
+// Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
 // Save code in devtools work space https://developer.chrome.com/docs/devtools/workspaces/
