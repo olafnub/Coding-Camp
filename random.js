@@ -102,6 +102,17 @@ function changeFunction() {
         }
     }
 }
+
+
+function forEachMethod() {
+    // Learn forEach Method https://youtu.be/hP0Rl5euD_o
+    let nums = [42, 34, 57, 12, 15];
+
+    nums.forEach((x,k,nums) => {
+        console.log(x, k, nums);
+    });
+}
+
 } // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
