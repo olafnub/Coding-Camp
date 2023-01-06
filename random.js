@@ -164,6 +164,20 @@ function mapClass() {
     // });
 }
 
+function recursionScript() {
+    // Approach the use of recursion https://youtu.be/8NZZSgtTelc
+    let num = 1;
+    function show() {
+        console.log("Hi", num);
+        num++;
+        if (num <= 2000)
+            show();
+    }
+    show();
+}
+recursionScript();
+
+
 function returnEnd() {
     // See if function startEnd() {var end = 10} console.log(end) would return 10 - Answer is false
     var start = 1;
