@@ -112,6 +112,16 @@ function forEachMethod() {
         console.log(x, k, nums);
     });
 }
+function returnEnd() {
+    // See if function startEnd() {var end = 10} console.log(end) would return 10 - Answer is false
+    var start = 1;
+    function startEnd() {
+        var end = 10;
+        return end;
+    }
+
+console.log(startEnd());
+}
 
 } // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
