@@ -1,0 +1,27 @@
+#frontend .container {
+    display: flex;
+    width: 600px;
+  }
+#frontend div {
+    width: 50px;
+    height: 50px;
+    background: black;
+   flex: 1 1 auto;
+  }
+#frontend div:first-child {
+    background:red;
+  }
+#frontend div:nth-child(2) {
+    background:blue;
+  }
+#frontend div:nth-child(3) {
+    background: purple;
+  }
+#frontend .transparent {
+    background: rgba(18, 138, 125, 0.5);
+    border: 2px 5px;
+    padding: 10px;
+    /* background: hsl(174, 77%, 31%); */
+    /* background: rgb(18, 138, 125); */
+    /* background: #128a7d; */
+  }
