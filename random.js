@@ -223,6 +223,56 @@ function returnEnd() {
 console.log(startEnd());
 }
 
+function devtoolTricks() {
+    // Watch cool console.log tricks https://www.youtube.com/watch?v=xkzDaKwinA8&ab_channel=WesBos
+    console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue;');
+
+    console.log('This is a %s string', 'String');
+
+    // const p = document.querySelector('p');
+    // console.assert(p.classList.contains('hi'), 'That is right!');
+
+    // console.clear();
+
+    const dogs = [
+        {
+            name: "Snickers",
+            age: 2
+        },
+        {
+            name:"Billy",
+            age: 1
+        },
+        {
+            name:"John",
+            age: 3
+        }
+    ]
+    dogs.forEach(dog => {
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`This is ${dog.name}`)
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.groupEnd(`${dog.name}`);
+    })
+    // Count
+    console.count('HI');
+    console.count('Bob');
+    console.count('HI');
+
+    // Time
+    console.time('Fetching data');
+    fetch('https://api.github.com/users/olafnub')
+        .then(data => data.json())
+        .then(data => {
+            console.timeEnd('Fetching data');
+            console.log(data);
+        })
+
+    // Table
+
+    console.table(dogs);
+}
+
 } 
 
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
