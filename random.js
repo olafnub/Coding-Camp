@@ -103,7 +103,7 @@ function changeFunction() {
     }
 }
 
-
+// Array Practice
 function forEachMethod() {
     // Learn forEach Method https://youtu.be/hP0Rl5euD_o
     let nums = [42, 34, 57, 12, 15];
@@ -112,6 +112,18 @@ function forEachMethod() {
         console.log(x, k, nums);
     });
 }
+
+function filterMapReduce() {
+    // Learn array method of filter,map, and reduce https://youtu.be/oQ7Le6SuLNA
+    let nums = [42, 31, 90, 53, 36, 75];
+
+    let results = nums.filter(n => n%2 === 0)
+        .map( n => n*2)
+        .reduce((a,b) => a+b);
+
+    console.log(results);
+}
+
 function returnEnd() {
     // See if function startEnd() {var end = 10} console.log(end) would return 10 - Answer is false
     var start = 1;
