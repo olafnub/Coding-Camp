@@ -289,8 +289,11 @@ window.onload = () => {
     randomColor.innerHTML = colorList[randomNumber];
     randomColor.addEventListener('click', changeColor);
 
-    document.getElementById("javascriptCode").innerHTML = javaCode;
+    // 
+    // document.getElementById("#typed")
 
+    document.getElementById("javascriptCode").innerHTML = javaCode;
+        
     // javascript Code
 }
 
