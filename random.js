@@ -288,6 +288,12 @@ manipulateTo();
 
 } 
 
+// Go through functions https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions
+// Go through returns https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values
+// function showMessage(from, text = "HI!") {
+//     alert(from + " : " + text);
+//     }
+    // showMessage("Ann", undefined); // HI! is only used when showMessage doesn't have text to fill iin/undefined
 
 // JSFIDDLE - Copy user's typing 
 // Html { <textarea></textarea> <pre></pre> }
