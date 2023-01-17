@@ -293,7 +293,31 @@ manipulateTo();
 // function showMessage(from, text = "HI!") {
 //     alert(from + " : " + text);
 //     }
-    // showMessage("Ann", undefined); // HI! is only used when showMessage doesn't have text to fill iin/undefined
+// showMessage("Ann", undefined); // HI! is only used when showMessage doesn't have text to fill iin/undefined
+// Power function
+// <input type="text">
+// function powerNumber(num, power) {
+//     for (let i = 1; i < power; i++) {
+//     num*=num;
+//     }
+//     return num;
+//     }
+//     document.querySelector("input").value = powerNumber(2, 4);
+// Go through the differnece between function expression and declaration
+// sayhi(“John”);
+// function sayHi(name) {
+// alert(`Hello, ${name)`);
+// }
+// This returns the Hello name because it is a declaration, and once it sees sayHi
+
+// sayHi(“John”);
+
+// let sayHi = function(name) {
+// alert(`Hello ${name}`);
+// }
+// This doesn’t return the name because it needs to go down the code in order to see sayHi is a variable
+
+
 
 // JSFIDDLE - Copy user's typing 
 // Html { <textarea></textarea> <pre></pre> }
