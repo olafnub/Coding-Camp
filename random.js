@@ -317,6 +317,22 @@ manipulateTo();
 // }
 // This doesn’t return the name because it needs to go down the code in order to see sayHi is a variable
 // Go through arrow functions http://javascript.info/arrow-functions-basics
+// Create a fizzbuzz
+// let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+// let addOn = document.querySelector("pre");
+// for (let i = 1; i <= answer; i++) {
+// if (i % 3 === 0 && i % 5 === 0) {
+// addOn.textContent += "FizzBuzz \n"
+// }
+// else if (i % 3 === 0 ) {
+// addOn.textContent += "Fizz \n";
+// } else if (i % 5 === 0 ) {
+// addOn.textContent +="Buzz \n";
+// } else {
+// addOn.textContent+=i + "\n";
+// }
+// }
 
 
 // JSFIDDLE - Copy user's typing 
