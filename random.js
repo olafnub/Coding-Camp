@@ -273,7 +273,39 @@ function devtoolTricks() {
     console.table(dogs);
 }
 
+function manipulateTo() {
+    const myText = 'I am a String';
+    const newString = myText.replace('String', 'Word');
+
+    // console.log(newString);
+
+    const myArray = ["Chocolate", "Strawberry", "Apple", "Poptart"];
+    const madeAString = myArray.join(' ');
+
+    console.log(madeAString);
+}
+manipulateTo();
+
 } 
+
+
+// JSFIDDLE - Copy user's typing 
+// Html { <textarea></textarea> <pre></pre> }
+// Script 
+// let textarea = document.querySelector("textarea");
+// let pre = document.querySelector("pre");
+// textarea.addEventListener("keydown", (event) => {
+// if (event.key != "Backspace") {
+// pre.textContent+=`${event.key}`
+// }
+// else {
+// let word = pre.textContent;
+// let arrayWord = [...word];
+// arrayWord.pop();
+// pre.textContent = arrayWord.join("");
+// }
+// });
+
 
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
