@@ -316,7 +316,7 @@ manipulateTo();
 // alert(`Hello ${name}`);
 // }
 // This doesn’t return the name because it needs to go down the code in order to see sayHi is a variable
-
+// Go through arrow functions http://javascript.info/arrow-functions-basics
 
 
 // JSFIDDLE - Copy user's typing 
