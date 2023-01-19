@@ -145,7 +145,7 @@ function changeClock() {
     }
 
 // Random color generator
-let colorList = ["palevioletred", "cadetblue", "chocolate", "coral", "cornflowerblue"]
+let colorList = ["cadetblue", "darkcyan", "darkgreen", "black", "steelblue", "teal", "slategrey"];
 let randomNumber = Math.floor(Math.random() * colorList.length);
 
 function changeColor() { //Change color of background
