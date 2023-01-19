@@ -53,6 +53,11 @@ body {
     align-items: baseline;
     gap: 4px;
 }
+.pink-text {
+    color:pink;
+    font-weight: bold;
+    background:rgba(234, 240, 246, 0.1);
+}
 
 @media screen and (max-width: 600px) {
     .nav-header {
