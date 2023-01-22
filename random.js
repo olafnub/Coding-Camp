@@ -378,6 +378,29 @@ manipulateTo();
     
 //     console.log(cat);
 
+// JSFIDDLE search for contact name + id
+// let idName = ["chris:396812", "patrick:410242", "emma:104192", "bridget:748123"];
+
+// let btn = document.querySelector("button");
+// let input = document.querySelector("input");
+// let pre = document.querySelector("pre");
+
+// btn.addEventListener("click", () => {
+
+// let findName = input.value;
+// findName.toLowerCase();
+
+// for (let i = 0; i < idName.length; i++) {
+
+// let splitName = idName[i].split(":");
+// console.log(splitName[0]);
+// if (splitName[0] === findName) {
+// pre.innerHTML = splitName;
+// }
+
+// }
+// input.value = "";
+// })
 
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
