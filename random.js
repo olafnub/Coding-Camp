@@ -319,7 +319,6 @@ manipulateTo();
 // Go through arrow functions http://javascript.info/arrow-functions-basics
 // Create a fizzbuzz
 // let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-
 // let addOn = document.querySelector("pre");
 // for (let i = 1; i <= answer; i++) {
 // if (i % 3 === 0 && i % 5 === 0) {
@@ -369,38 +368,53 @@ manipulateTo();
 //     function startsWith(string) {
 //     return string.startsWith("L");
 //     }
-    
-//     let cats = ["Orange", "Gray", "Blue", "White", "Black", "Luke"];
-    
+//     let cats = ["Orange", "Gray", "Blue", "White", "Black", "Luke"];    
 //     let cat = cats.map(startsWith);
 //     let catL = cats.filter(startsWith);
-    
-    
 //     console.log(cat);
+
+// JS FIDDLE USING CONTINUE FUNCTION
+// let sqrt = Math.sqrt(5);
+// let floor = Math.floor(sqrt);
+// console.log(floor);
+// for (let i = 0; i < 20; i++) {
+// if (i%2 !== 0) {
+// continue;
+// } 
+// console.log(i);
+// }
 
 // JSFIDDLE search for contact name + id
 // let idName = ["chris:396812", "patrick:410242", "emma:104192", "bridget:748123"];
-
 // let btn = document.querySelector("button");
 // let input = document.querySelector("input");
 // let pre = document.querySelector("pre");
-
 // btn.addEventListener("click", () => {
-
 // let findName = input.value;
 // findName.toLowerCase();
-
 // for (let i = 0; i < idName.length; i++) {
-
 // let splitName = idName[i].split(":");
 // console.log(splitName[0]);
 // if (splitName[0] === findName) {
 // pre.innerHTML = splitName;
 // }
-
 // }
 // input.value = "";
 // })
+
+// JS FIDDLE - Use do while loop 
+// let catList = ["Orange", "Bob", "Gray", "Smith"];
+// let pre = document.querySelector("pre");
+// let i = 0;
+// pre.textContent = "My cats are called ";
+// do {
+// if (i === catList.length - 1) {
+// pre.textContent+= "and " + catList[i] + ".";
+// } else {
+// pre.textContent+=catList[i] + ", "
+// }
+// i++;
+// } while (i < catList.length);
 
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
