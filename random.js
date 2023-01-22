@@ -416,6 +416,42 @@ manipulateTo();
 // i++;
 // } while (i < catList.length);
 
+// MDN Active learning
+// let output = document.querySelector('.output');
+// output.innerHTML = '';
+// // let i = 10;
+// for (let i = 10; i >= 0; i--) {
+// const para = document.createElement('p');
+// if (i === 10) {
+// para.textContent = "Count down from 10!";
+// } else if (i === 0) {
+// para.textContent = "Blast off!";
+// }
+// else {
+// para.textContent = i;
+// }
+// output.appendChild(para);
+// }
+// const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+// const admitted = document.querySelector('.admitted');
+// const refused = document.querySelector('.refused');
+// admitted.textContent = 'Admit: ';
+// refused.textContent = 'Refuse: ';
+// // loop starts here
+// for (const name of people) {
+// if (name === "Phil" || name === "Lola") {
+// refused.textContent += name + ", ";
+// } else {
+// admitted.textContent += name + ", ";
+// }
+// }
+// let admittedString = admitted.textContent;
+// let admittedLength = admittedString.length;
+// admitted.textContent = admittedString.slice(0, admittedLength-2) + ".";
+// let refusedString = refused.textContent;
+// let refusedLength = refusedString.length;
+// refused.textContent = refusedString.slice(0, refusedLength-2) + ".";
+
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
