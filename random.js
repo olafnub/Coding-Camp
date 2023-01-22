@@ -333,6 +333,16 @@ manipulateTo();
 // addOn.textContent+=i + "\n";
 // }
 // }
+// let word = "word";
+
+// for (let i = word.length; i > 0; i--) {
+// let sub = word.substring(i, 0);
+// document.querySelector("pre").textContent += sub + "\n";
+// }
+// for (let i = 2; i <= word.length; i++) { 
+// let sub = word.substring(0, i);
+// document.querySelector("pre").textContent += sub + "\n";
+// }
 
 
 // JSFIDDLE - Copy user's typing 
@@ -351,6 +361,22 @@ manipulateTo();
 // pre.textContent = arrayWord.join("");
 // }
 // });
+
+// JSFIDDLE - Using map and filter with functions
+// function toUpper(string) {
+//     return string.toUpperCase();
+//     }
+//     function startsWith(string) {
+//     return string.startsWith("L");
+//     }
+    
+//     let cats = ["Orange", "Gray", "Blue", "White", "Black", "Luke"];
+    
+//     let cat = cats.map(startsWith);
+//     let catL = cats.filter(startsWith);
+    
+    
+//     console.log(cat);
 
 
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
