@@ -452,6 +452,23 @@ manipulateTo();
 // let refusedLength = refusedString.length;
 // refused.textContent = refusedString.slice(0, refusedLength-2) + ".";
 
+// JSFIDDLE find prime numbers
+// for (let i = 0; i < 20; i++) {
+//     let lightSwitch = false;
+//     if (i%2 === 0) {
+//     lightSwitch=true;
+//     }
+//     else if (i%3 === 0 && i!==3) {
+//     lightSwitch=true;
+//     }
+    
+//     if (lightSwitch === true) {
+//     console.log(`${i} is not a prime number`);
+//     } else {
+//     console.log(`${i} is a prime number`)
+//     }
+//     }
+
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
