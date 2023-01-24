@@ -469,6 +469,46 @@ manipulateTo();
 //     }
 //     }
 
+// JSFIDDLE - DOM manipulate
+// const container = document.querySelector("#container");
+// console.dir(container.firstElementChild);
+// const controls = document.querySelector('.controls');
+// console.dir(controls.previousElementSibling);
+// const divs = document.querySelectorAll('div');
+// console.log(divs);
+// const div = document.createElement("div");
+// div.style.color = "blue";
+// div.style.cssText = "color: blue; background: white;";
+// div.setAttribute('style', 'color: blue; background: white;');
+// /* container.appendChild(div); */
+// div.setAttribute("id", "theDiv");
+// console.log(div.getAttribute('id'));
+// div.removeAttribute('id');
+// div.classList.add('new');
+// div.textContent = "Hello World!"";
+
+// JSFIDDLE - Appending child nodes to parent
+// const container = document.querySelector("div");
+// const para = document.createElement('p');
+// para.textContent = "Hey, I'm red!";
+// container.appendChild(para);
+// para.classList.add("para");
+// para.style.color = "red";
+// const headingThree = document.createElement("h3");
+// headingThree.textContent = "I'm a blue h3!";
+// container.appendChild(headingThree);
+// headingThree.style.color ="blue";
+// const div = document.createElement('div');
+// div.style.backgroundColor = "pink";
+// div.style.border = "1px solid black";
+// const headingOne = document.createElement("h1");
+// headingOne.textContent = "I'm in a div";
+// div.appendChild(headingOne);
+// const paraDiv = document.createElement('p');
+// paraDiv.textContent = "ME TOO!";
+// div.appendChild(paraDiv);
+// container.appendChild(div);
+
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
 // Skim through and watch video of console Utilities API https://developer.chrome.com/docs/devtools/console/utilities/
