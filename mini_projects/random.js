@@ -416,6 +416,48 @@ manipulateTo();
 // i++;
 // } while (i < catList.length);
 
+// JSFIDDLE QuerySelector Move Game
+// HTML
+{/* <p>
+One
+</p>
+<p>
+Two
+</p>
+<p>
+Three
+</p>
+<p>
+Move me
+</p>
+<pre></pre>
+<pre></pre> */} // SCRIPT
+// let paragraphs = document.querySelectorAll("p");
+// /* document.body.insertBefore(paragraphs[2], paragraphs[0]); */
+// let moveTo = 0;
+// let start = 3;
+// let switchLane = false;
+// function clicked() {
+// 	 if (!switchLane) {
+// 	moveTo++;
+//   if (moveTo >= 3) {
+//   switchLane = true;
+//   }
+//   } else {
+//   moveTo--;
+//   if (moveTo <= -1) {
+//   switchLane = false;
+//   }
+//   }
+//  	document.body.insertBefore(paragraphs[3], paragraphs[3-moveTo]);
+//   preTwo.textContent = moveTo;
+// }
+// let pre=document.querySelector('pre');
+// pre.textContent = "Length: " + paragraphs.length;
+// const preTwo = document.querySelectorAll('pre')[1];
+// preTwo.textContent = moveTo;
+// paragraphs.forEach(p => p.addEventListener('click', clicked));
+
 // MDN Active learning
 // let output = document.querySelector('.output');
 // output.innerHTML = '';
@@ -508,6 +550,8 @@ manipulateTo();
 // paraDiv.textContent = "ME TOO!";
 // div.appendChild(paraDiv);
 // container.appendChild(div);
+
+// JSFIDDLE - 
 
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
