@@ -551,7 +551,94 @@ Move me
 // div.appendChild(paraDiv);
 // container.appendChild(div);
 
-// JSFIDDLE - 
+// JSFIDDLE - PLAYAROUND
+// HTML
+{/* <p>
+In recent history, we've been able to discover the power of passion
+</p>
+<p data-classified="secret">
+This is a secret
+</p>
+<p data-classified="unclassified">
+Be free
+</p>
+<blockquote>
+"The mind is a powerful thing"
+</blockquote>
+<a href="" style="color:green; border: none">hi</a>
+<p style="text-align: center;">
+<img style="width: 350px; position: relative;" src="https://media.npr.org/assets/img/2021/08/11/gettyimages-1279899488_wide-f3860ceb0ef19643c335cb34df3fa1de166e2761-s1600-c85.webp">
+</p>
+<table>
+<tr>
+  <th>Name</th>
+  <th>Height</th>
+  <th>Age</th>
+</tr>
+<tr>
+  <td>Bob</td>
+  <td>5'11</td>
+  <td>20</td>
+</tr>
+<tr>
+  <th>Name</th>
+  <th>Height</th>
+  <th>Age</th>
+</tr>
+<tr>
+  <td>Alice</td>
+  <td>6'1</td>
+  <td>19</td>
+</tr>
+</table> */}
+// CSS
+// blockquote {
+//     width: 100px;
+//     height; 100px;
+//   }
+// let arrayish = {
+//     0: 'zero', 
+//     1: 'one',
+//     length: 2
+//     } 
+//     let array = Array.from(arrayish);
+//     console.log(array.map(s => s.toUpperCase()));   
+//     let para = document.querySelectorAll('p');   
+//     for (para of Array.from(para)) {
+//     if (para.getAttribute('data-classified') == 'secret') {
+//     para.remove();
+//     }
+//     } 
+//     let stringy = 'this';
+//     let arrayiy = ['hi', 'fi', 'this'];
+//     let i = 0; 
+//     for (stringy of arrayiy) {
+//     console.log(arrayiy[i]);
+//     i++;
+//     }
+//     console.log(para);
+//       let cat = document.querySelector("img");
+//       let angle = Math.PI / 2;
+//       function animate(time, lastTime) {
+//         if (lastTime != null) {
+//           angle += (time - lastTime) * 0.001;
+//         }
+//         cat.style.top = (Math.sin(angle) * 20) + "px";
+//         cat.style.left = (Math.cos(angle) * 200) + "px";
+//         requestAnimationFrame(newTime => animate(newTime, time));
+//       }
+//       /* requestAnimationFrame(animate); */   
+//       const names = [
+//           {gender: "bob", age:'40', skin: 'white'},
+//         {gender: "whitney", age:'40', skin: 'black'}
+//       ];
+//       console.log(Object.keys(names[0]).length);   
+//     let th = document.getElementsByTagName('th');
+//     console.log(th);
+//     let tdAll = document.querySelectorAll('td');
+//     tdAll.forEach(cells => {
+//         cells.style.textAlign = "center";
+//     })
 
 // Help of https://stackoverflow.com/questions/53378613/console-time-in-second
 // Skim through and go through console API reference https://developer.chrome.com/docs/devtools/console/api/g
