@@ -43,6 +43,7 @@ body {
 
 #javascriptCode {
     background: transparent;
+    height: auto;
 }
 
 #javascriptCode:hover {
