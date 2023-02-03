@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element by Tag Name</title>
+</head>
+<body>
+    <h1>Heading with a <span>span</span> element.</h1>
+    <p>A paragraph with <span>one</span>, <span>two</span>
+    spans.</p>
+
+    <script>
+
+
+        function byTagName(node, tagName) {
+          // Your code here.
+          let submitTags = [];
+
+          let nodeChildren = node.children;
+        //   console.log(nodeChildren[0].children);
+
+          for (let i = 0; i < nodeChildren.length; i++) {  
+            let outerNode = nodeChildren[i];
+
+            for (let j = 0; j < outerNode.children.length; j++) {
+                let innerNode = outerNode.children[j].nodeName;
+                if (innerNode.toLowerCase() === tagName) {
+                    submitTags.push(tagName);
+                }
+            }
+            
+            if (outerNode.nodeName.toLowerCase() === tagName) {
+                submitTags.push(tagName);
+            } 
+          }
+
+          return submitTags;
+        }
+    
+        console.log(byTagName(document.body, "h1").length);
+        // → 1
+        console.log(byTagName(document.body, "span").length);
+        // → 3
+        let para = document.querySelector("p");
+        console.log(byTagName(para, "span").length);
+        // → 2
+
+
+      </script>
+    
+    <footer style="margin-top: auto;">
+        <a style="color: red" href="https://eloquentjavascript.net/14_dom.html">Source practice problem #2</a>
+    </footer>
+</body>
+</html>
