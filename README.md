@@ -4,11 +4,11 @@
 
 Welcome to the instagram branch! In this i'll have the resources and links i used to create the api page
 
-Instagram API - https://youtu.be/RI4d2TeTFws
+Demo of the Instagram API - https://youtu.be/RI4d2TeTFws
 
 ## Road map of creating this (didn't use this, instead i learned a different method)
 
-Originally my idea was to either follow a guide and completely code it through, but as I was doing some searching, I thankfully came across a linkedin post and that post was able to get me lifted off the ground. It thought we what to look for and I was able to learn and create my own version of instagram captions API. 
+Originally my idea was to either follow a guide and completely code it through or if that didn't work then it was to learn how to use python and scrape instagram for all the captions. But as I was doing more searching, I thankfully came across a linkedin post that was about them using basic instagram api to get all their followers. They provided links and pictures of how it worked and I luckily was able to check them out. That post lifted me off the ground as I was stuck prior, trying to follow a 10 step video on youtube for instagram api using an unfamiliar langauge(php). The linkedin post provided me what to look for and so I learned and created my own webpage using instagram basic API. 
 
 ROADMAP
 
