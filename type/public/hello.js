@@ -11,3 +11,12 @@ function printCoord(pt) {
     console.log("The y coordinate is " + pt.y);
 }
 printCoord({ x: 3, y: 7 });
+function printName(obj) {
+    // console.log(obj.last.toUpperCase());
+    if (obj.last !== undefined) {
+        console.log(obj.last.toUpperCase());
+    }
+    // console.log(obj.last?.toUpperCase());
+}
+printName({ first: "Alice" });
+printName({ first: "Bob", last: "Candice" });
